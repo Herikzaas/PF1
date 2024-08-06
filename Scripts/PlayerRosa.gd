@@ -25,10 +25,10 @@ func _physics_process(delta):
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction!=0 :
 		velocity.x = direction * SPEED
-		anim.play("Right")
+		anim.play("run")
 		anim.scale.x = direction
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		anim.play("Idle")
+		anim.play("idle")
 
 	move_and_slide()

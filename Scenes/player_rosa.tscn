@@ -93,7 +93,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_28u8a")
 }],
 "loop": true,
-"name": &"Idle",
+"name": &"idle",
 "speed": 5.0
 }, {
 "frames": [{
@@ -122,7 +122,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_3cxhb")
 }],
 "loop": true,
-"name": &"Jump",
+"name": &"jump",
 "speed": 5.0
 }, {
 "frames": [{
@@ -145,7 +145,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_tams7")
 }],
 "loop": true,
-"name": &"Right",
+"name": &"run",
 "speed": 5.0
 }]
 
@@ -159,9 +159,8 @@ metadata/_edit_group_ = true
 
 [node name="AnimRosa" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mo784")
-animation = &"Jump"
-autoplay = "Idle"
-frame_progress = 0.0467733
+animation = &"idle"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_wwibo")
