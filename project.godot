@@ -45,6 +45,11 @@ PuloRosa={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Personagens"
+2d_physics/layer_2="Solo"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
