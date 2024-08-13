@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://djk06e5uriyua"]
+[gd_scene load_steps=9 format=3 uid="uid://djk06e5uriyua"]
 
 [ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/player_rosa.tscn" id="1_ogcr8"]
 [ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/player_azul.tscn" id="2_i36b2"]
 [ext_resource type="Texture2D" uid="uid://gvfswu6g0ps5" path="res://assets/TileMapTST/Terrain (16x16).png" id="3_o12tb"]
 [ext_resource type="Texture2D" uid="uid://c0wj278qycgch" path="res://assets/3 Dude_Monster/Dude_Monster_Jump_8.png" id="4_knvyw"]
 [ext_resource type="Texture2D" uid="uid://cnfahhs7e275l" path="res://assets/3 Dude_Monster/Dude_Monster.png" id="5_f1xqc"]
+[ext_resource type="Texture2D" uid="uid://jv24fpcqvpms" path="res://assets/3 Dude_Monster/Dude_Monster_Walk+Attack_6.png" id="6_pktah"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rtwlo"]
 texture = ExtResource("3_o12tb")
@@ -478,3 +479,7 @@ texture = ExtResource("4_knvyw")
 [node name="DudeMonster" type="Sprite2D" parent="."]
 position = Vector2(291, 199)
 texture = ExtResource("5_f1xqc")
+
+[node name="DudeMonsterWalk+attack6" type="Sprite2D" parent="."]
+position = Vector2(390, 48)
+texture = ExtResource("6_pktah")
