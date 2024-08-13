@@ -1,10 +1,9 @@
-[gd_scene load_steps=26 format=3 uid="uid://dxbi7vjfcksvm"]
+[gd_scene load_steps=25 format=3 uid="uid://dxbi7vjfcksvm"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerRosa.gd" id="1_8hvmp"]
 [ext_resource type="Texture2D" uid="uid://bxyyxrvru51y8" path="res://assets/1 Pink_Monster/Pink_Monster_Idle_4.png" id="2_v441s"]
 [ext_resource type="Texture2D" uid="uid://bdgw3m1a20sdn" path="res://assets/1 Pink_Monster/Pink_Monster_Jump_8.png" id="3_1gtku"]
 [ext_resource type="Texture2D" uid="uid://cqt1mnibuml0d" path="res://assets/1 Pink_Monster/Pink_Monster_Run_6.png" id="4_spuas"]
-[ext_resource type="Texture2D" uid="uid://dhrletntkdwb1" path="res://assets/3 Dude_Monster/Dude_Monster_Death_8.png" id="5_bqmcj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eqtsh"]
 atlas = ExtResource("2_v441s")
@@ -165,9 +164,3 @@ autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_wwibo")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-
-[node name="DudeMonsterDeath8" type="Sprite2D" parent="."]
-position = Vector2(156, -1)
-texture = ExtResource("5_bqmcj")

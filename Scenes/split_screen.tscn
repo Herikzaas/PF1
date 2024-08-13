@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://h1k4niqee6l1"]
+
+[ext_resource type="Script" path="res://Scripts/SplitScreen.gd" id="1_al63c"]
+[ext_resource type="PackedScene" uid="uid://djk06e5uriyua" path="res://Scenes/principal.tscn" id="2_x4emx"]
+
+[node name="SplitScreen" type="Node"]
+script = ExtResource("1_al63c")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(390, 440)
+render_target_update_mode = 4
+
+[node name="Principal" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_x4emx")]
+
+[node name="Camera2D" type="Camera2D" parent="HBoxContainer/SubViewportContainer/SubViewport"]
+
+[node name="ColorRect" type="ColorRect" parent="HBoxContainer"]
+modulate = Color(1, 0.498039, 1, 1)
+custom_minimum_size = Vector2(3, 0)
+layout_mode = 2
+
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/SubViewportContainer2"]
+handle_input_locally = false
+size = Vector2i(390, 440)
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="HBoxContainer/SubViewportContainer2/SubViewport"]
