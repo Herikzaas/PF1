@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://djk06e5uriyua"]
+[gd_scene load_steps=7 format=3 uid="uid://djk06e5uriyua"]
 
 [ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/player_rosa.tscn" id="1_ogcr8"]
 [ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/player_azul.tscn" id="2_i36b2"]
 [ext_resource type="Texture2D" uid="uid://gvfswu6g0ps5" path="res://assets/TileMapTST/Terrain (16x16).png" id="3_o12tb"]
+[ext_resource type="Texture2D" uid="uid://c0wj278qycgch" path="res://assets/3 Dude_Monster/Dude_Monster_Jump_8.png" id="4_knvyw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rtwlo"]
 texture = ExtResource("3_o12tb")
@@ -468,3 +469,7 @@ tile_set = SubResource("TileSet_ee3uy")
 format = 2
 layer_0/name = "Terrain"
 layer_0/tile_data = PackedInt32Array(786440, 458752, 0, 786441, 458752, 0, 786442, 458752, 0, 786443, 458752, 0, 786444, 458752, 0, 786445, 458752, 0, 786446, 458752, 0, 786447, 458752, 0, 786448, 458752, 0, 786449, 458752, 0, 786450, 458752, 0, 786451, 458752, 0, 786452, 458752, 0, 786453, 458752, 0, 786454, 458752, 0, 786455, 458752, 0, 655381, 393216, 1, 720917, 393216, 1, 589846, 458752, 0, 589847, 524288, 0, 589845, 458752, 0)
+
+[node name="DudeMonsterJump8" type="Sprite2D" parent="."]
+position = Vector2(126, 147)
+texture = ExtResource("4_knvyw")
