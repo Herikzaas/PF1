@@ -1,9 +1,10 @@
-[gd_scene load_steps=25 format=3 uid="uid://lhiwkujy3uf"]
+[gd_scene load_steps=26 format=3 uid="uid://lhiwkujy3uf"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerAzul.gd" id="1_eyxnc"]
 [ext_resource type="Texture2D" uid="uid://cua3pye7kr7qi" path="res://assets/3 Dude_Monster/Dude_Monster_Idle_4.png" id="2_7imon"]
 [ext_resource type="Texture2D" uid="uid://c0wj278qycgch" path="res://assets/3 Dude_Monster/Dude_Monster_Jump_8.png" id="3_dj1it"]
 [ext_resource type="Texture2D" uid="uid://dkf5jmllyvcd5" path="res://assets/3 Dude_Monster/Dude_Monster_Run_6.png" id="4_3o8wg"]
+[ext_resource type="Texture2D" uid="uid://jv24fpcqvpms" path="res://assets/3 Dude_Monster/Dude_Monster_Walk+Attack_6.png" id="5_rbfw5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ckgl5"]
 atlas = ExtResource("2_7imon")
@@ -164,3 +165,7 @@ autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_yjjkt")
+
+[node name="DudeMonsterWalk+attack6" type="Sprite2D" parent="."]
+position = Vector2(222, 65)
+texture = ExtResource("5_rbfw5")
