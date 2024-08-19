@@ -9,11 +9,10 @@ func _ready():
 func _process(delta):
 	pass
 
-
-func _on_area_entered(area):
-	$"/root/Global".TextoF1 = 1
-	
-
-
 func _on_body_entered(body):
 	$"/root/Global".TextoF1 = 1
+
+
+func _on_body_exited(body):
+	$"/root/Global".TextoF1 = 0
+	

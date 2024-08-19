@@ -21,5 +21,12 @@ func _ready():
 		node.player.add_child(remote_transform)
 
 func _process(delta):
-	if $"/root/Global".TextoF1 == 1 : 
+	if $"/root/Global".TextoF1 == 1 :
 		$"TextPlayerAzul".text = 'deu certo bicho'
+	else :
+		_limpatxt()
+
+func _limpatxt():
+	await get_tree().create_timer(0.4).timeout 
+	$"TextPlayerAzul".text = ''
+		
