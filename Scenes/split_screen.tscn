@@ -38,3 +38,10 @@ render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/SubViewportContainer2/SubViewport"]
 position_smoothing_enabled = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 44.0
+offset_top = 392.0
+offset_right = 387.0
+offset_bottom = 432.0
+text = "xszcxzca"
