@@ -19,3 +19,7 @@ func _ready():
 		var remote_transform := RemoteTransform2D.new()
 		remote_transform.remote_path = node.camera.get_path()
 		node.player.add_child(remote_transform)
+
+func _process(delta):
+	if $"/root/Global".TextoF1 == 1 : 
+		$"TextPlayerAzul".text = 'deu certo bicho'
