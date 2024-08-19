@@ -21,6 +21,7 @@ render_target_update_mode = 4
 [node name="Principal" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_x4emx")]
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/SubViewportContainer/SubViewport"]
+position_smoothing_enabled = true
 
 [node name="ColorRect" type="ColorRect" parent="HBoxContainer"]
 modulate = Color(1, 0.498039, 1, 1)
@@ -36,3 +37,4 @@ size = Vector2i(410, 440)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/SubViewportContainer2/SubViewport"]
+position_smoothing_enabled = true
