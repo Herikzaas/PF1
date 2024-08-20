@@ -1,10 +1,142 @@
-[gd_scene load_steps=6 format=3 uid="uid://djk06e5uriyua"]
+[gd_scene load_steps=13 format=4 uid="uid://djk06e5uriyua"]
 
 [ext_resource type="Script" path="res://Scripts/Fase1.gd" id="1_64kuo"]
 [ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/player_rosa.tscn" id="1_ogcr8"]
 [ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/player_azul.tscn" id="2_i36b2"]
 [ext_resource type="PackedScene" uid="uid://dxwhxvj5yruvy" path="res://Scenes/testeMSG.tscn" id="4_3r1ft"]
-[ext_resource type="PackedScene" uid="uid://dcpamylnalyj5" path="res://Scenes/tile_map.tscn" id="4_teul3"]
+[ext_resource type="Texture2D" uid="uid://rnxje0tbt0ft" path="res://assets/Seasonal Tilesets/Seasonal Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="5_t315n"]
+[ext_resource type="Texture2D" uid="uid://dm8jlt5k071bi" path="res://assets/Seasonal Tilesets/Seasonal Tilesets/2 - Autumn Forest/Autumn_entities (16 x 16).png" id="6_wm8tb"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gbnet"]
+texture = ExtResource("5_t315n")
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+11:1/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+11:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+15:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+11:4/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+11:5/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+4:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_sugu7"]
+sources/0 = SubResource("TileSetAtlasSource_gbnet")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ohii"]
+texture = ExtResource("6_wm8tb")
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+14:4/0 = 0
+16:4/0 = 0
+18:4/0 = 0
+1:5/0 = 0
+3:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ghlf6"]
+sources/0 = SubResource("TileSetAtlasSource_1ohii")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qduee"]
+texture = ExtResource("6_wm8tb")
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+14:4/0 = 0
+16:4/0 = 0
+18:4/0 = 0
+1:5/0 = 0
+3:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_f2bg4"]
+sources/0 = SubResource("TileSetAtlasSource_qduee")
 
 [node name="Fase1" type="Node2D"]
 script = ExtResource("1_64kuo")
@@ -15,9 +147,22 @@ collision_mask = 2
 [node name="PlayerAzul" parent="." instance=ExtResource("2_i36b2")]
 collision_mask = 2
 
-[node name="TileMap" parent="." instance=ExtResource("4_teul3")]
-
 [node name="TestePedra" parent="." instance=ExtResource("4_3r1ft")]
 position = Vector2(600, 172)
+
+[node name="TileMapAutumn" type="TileMap" parent="."]
+format = 2
+
+[node name="Terrain" type="TileMapLayer" parent="TileMapAutumn"]
+tile_map_data = PackedByteArray("AAAMABQAAAADAAEAAAANABQAAAADAAEAAAAOABQAAAADAAEAAAAPABQAAAADAAEAAAAQABQAAAADAAEAAAARABQAAAADAAEAAAASABQAAAADAAEAAAATABQAAAADAAEAAAAUABQAAAADAAEAAAAVABQAAAADAAEAAAAWABQAAAADAAEAAAAXABQAAAADAAEAAAAYABQAAAADAAEAAAA=")
+tile_set = SubResource("TileSet_sugu7")
+
+[node name="Arvores" type="TileMapLayer" parent="TileMapAutumn"]
+tile_map_data = PackedByteArray("AAAPABIAAAABAAEAAAAPABMAAAABAAIAAAAPABQAAAABAAMAAAAQABIAAAACAAEAAAAQABMAAAACAAIAAAAQABQAAAACAAMAAAARABIAAAADAAEAAAARABMAAAADAAIAAAARABQAAAADAAMAAAA=")
+tile_set = SubResource("TileSet_ghlf6")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="TileMapAutumn"]
+tile_map_data = PackedByteArray("AAAOABQAAAAJAAMAAAAPABQAAAAJAAMAAAAQABQAAAAKAAMAAAARABQAAAALAAMAAAASABQAAAAMAAMAAAATABQAAAAMAAMAAAA=")
+tile_set = SubResource("TileSet_f2bg4")
 
 [connection signal="area_entered" from="TestePedra" to="TestePedra" method="_on_area_entered"]
