@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://djk06e5uriyua"]
+[gd_scene load_steps=9 format=3 uid="uid://djk06e5uriyua"]
 
 [ext_resource type="Script" path="res://Scripts/Fase1.gd" id="1_64kuo"]
 [ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/player_rosa.tscn" id="1_ogcr8"]
 [ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/player_azul.tscn" id="2_i36b2"]
 [ext_resource type="Texture2D" uid="uid://gvfswu6g0ps5" path="res://assets/TileMapTST/Terrain (16x16).png" id="3_o12tb"]
 [ext_resource type="PackedScene" uid="uid://dxwhxvj5yruvy" path="res://Scenes/testeMSG.tscn" id="4_3r1ft"]
+[ext_resource type="Texture2D" uid="uid://b8gqmao2q5lnl" path="res://assets/3 Dude_Monster/Dude_Monster_Attack1_4.png" id="6_ekiif"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rtwlo"]
 texture = ExtResource("3_o12tb")
@@ -188,5 +189,9 @@ layer_0/tile_data = PackedInt32Array(786440, 458752, 0, 786441, 458752, 0, 78644
 
 [node name="TestePedra" parent="." instance=ExtResource("4_3r1ft")]
 position = Vector2(600, 172)
+
+[node name="DudeMonsterAttack14" type="Sprite2D" parent="."]
+position = Vector2(318, 259)
+texture = ExtResource("6_ekiif")
 
 [connection signal="area_entered" from="TestePedra" to="TestePedra" method="_on_area_entered"]
