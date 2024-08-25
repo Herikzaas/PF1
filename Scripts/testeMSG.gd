@@ -10,9 +10,11 @@ func _process(delta):
 	pass
 
 func _on_body_entered(body):
-	$"/root/Global".TextoF1 = 1
-
-
+	if body.is_in_group('Rosa'):
+		$"/root/Global".TextoF1 = 1
+	if body.is_in_group('Azul'):
+		$"/root/Global".TextoF1 = 2
+	
 func _on_body_exited(body):
 	$"/root/Global".TextoF1 = 0
 	

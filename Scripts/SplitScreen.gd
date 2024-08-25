@@ -23,6 +23,8 @@ func _ready():
 func _process(delta):
 	if $"/root/Global".TextoF1 == 1 :
 		$"TextPlayerAzul".text = 'deu certo bicho'
+	elif $"/root/Global".TextoF1 == 2 :
+		$"TextPlayerAzul".text = 'AZULAO'
 	else :
 		_limpatxt()
 
