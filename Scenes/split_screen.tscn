@@ -22,6 +22,7 @@ render_target_update_mode = 4
 [node name="Principal" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_x4emx")]
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/SubViewportContainer/SubViewport"]
+offset = Vector2(0, -50)
 position_smoothing_enabled = true
 
 [node name="ColorRect" type="ColorRect" parent="HBoxContainer"]
@@ -38,6 +39,7 @@ size = Vector2i(410, 440)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/SubViewportContainer2/SubViewport"]
+offset = Vector2(0, -50)
 position_smoothing_enabled = true
 
 [node name="TextPlayerAzul" type="RichTextLabel" parent="."]
