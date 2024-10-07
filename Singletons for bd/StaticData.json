@@ -1,10 +1,14 @@
 {
 	"perguntas" :{
-		"apple": {
-			"id" : 0,
-			"cost" : 10 ,
-			"description" : "uma fruta vermelha"
-	},
+		"fase1": {
+			"p1": {
+				"enunciado" : "qual a cor",
+				"r1":"verde maramsfda asd faasdfa",
+				"r2":"verde",
+				"r3":"verde",
+				"r4":"verde"
+			}
+		},
 		"teste" : {
 			"id" : 1,
 			"cost" : 15
