@@ -23,7 +23,7 @@ StaticData="*res://Singletons for bd/StaticData.gd"
 
 [display]
 
-window/size/viewport_width=820
+window/size/viewport_width=830
 window/size/viewport_height=440
 window/stretch/mode="viewport"
 

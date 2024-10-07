@@ -2,11 +2,12 @@
 	"perguntas" :{
 		"fase1": {
 			"p1": {
-				"enunciado" : "qual a cor",
-				"r1":"verde maramsfda asd faasdfa",
-				"r2":"verde",
-				"r3":"verde",
-				"r4":"verde"
+				"enunciado" : "Qual o estado brasileiro que se localiza o município de Inconfidentes?",
+				"r1":"São Paulo",
+				"r2":"Rio de Janeiro",
+				"r3":"Minas Gerais",
+				"r4":"Amazonas",
+				"correta" : "Minas Gerais"
 			}
 		},
 		"teste" : {

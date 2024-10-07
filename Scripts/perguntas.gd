@@ -13,4 +13,6 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Resp1Azul") and $HolderAzul.visible == true:
-		$HolderAzul.visible = false
+		if $HolderAzul/resp1.text == str(StaticData.itemData['perguntas']["fase1"]["p1"]["correta"]):
+			$HolderAzul/resp1.self_modulate = Color(1,1,1)
+			$HolderAzul.visible = false
