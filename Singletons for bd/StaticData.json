@@ -1,0 +1,13 @@
+{
+	"perguntas" :{
+		"apple": {
+			"id" : 0,
+			"cost" : 10 ,
+			"description" : "uma fruta vermelha"
+	},
+		"teste" : {
+			"id" : 1,
+			"cost" : 15
+	}
+  }
+}

@@ -19,16 +19,3 @@ func _ready():
 		var remote_transform := RemoteTransform2D.new()
 		remote_transform.remote_path = node.camera.get_path()
 		node.player.add_child(remote_transform)
-
-func _process(delta):
-	if $"/root/Global".TextoF1 == 1 :
-		$"TextPlayerAzul".text = 'deu certo bicho'
-	elif $"/root/Global".TextoF1 == 2 :
-		$"TextPlayerAzul".text = 'AZULAO'
-	else :
-		_limpatxt()
-
-func _limpatxt():
-	await get_tree().create_timer(0.4).timeout 
-	$"TextPlayerAzul".text = ''
-		
