@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/SplitScreen.gd" id="1_al63c"]
 [ext_resource type="PackedScene" uid="uid://djk06e5uriyua" path="res://Scenes/principal.tscn" id="2_x4emx"]
 [ext_resource type="FontFile" uid="uid://diean77avqa47" path="res://fonts/Font/Planes_ValMore.ttf" id="3_yy07k"]
-[ext_resource type="PackedScene" uid="uid://75pocnhmvxuu" path="res://Scenes/perguntas.tscn" id="4_6qfib"]
+[ext_resource type="PackedScene" path="res://Scenes/perguntas.tscn" id="4_6qfib"]
 
 [node name="SplitScreen" type="Node"]
 script = ExtResource("1_al63c")
