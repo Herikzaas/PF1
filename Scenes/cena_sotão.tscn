@@ -1,9 +1,10 @@
-[gd_scene load_steps=14 format=4 uid="uid://dq8p0y3qto4um"]
+[gd_scene load_steps=15 format=4 uid="uid://d1guv4xro6b1k"]
 
 [ext_resource type="Texture2D" uid="uid://dmu1ihgjg6u8x" path="res://assets/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_i0sgq"]
 [ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/player_rosa.tscn" id="2_8wjqs"]
 [ext_resource type="Texture2D" uid="uid://8iul07vcltcc" path="res://assets/Kings and Pigs/Sprites/14-TileSets/Decorations (32x32).png" id="2_aodk8"]
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Pixel Art Platformer - Village Props v2.3.0/Texture/TX Village Props.png" id="2_k5tus"]
+[ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/player_azul.tscn" id="5_vksob"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rsjqn"]
 texture = ExtResource("1_i0sgq")
@@ -4513,3 +4514,5 @@ tile_map_data = PackedByteArray("AAAtABgAAAAQAAIAAAAtABkAAAAQAAMAAAAuABgAAAARAAI
 tile_set = SubResource("TileSet_3govm")
 
 [node name="PlayerRosa" parent="." instance=ExtResource("2_8wjqs")]
+
+[node name="PlayerAzul" parent="." instance=ExtResource("5_vksob")]

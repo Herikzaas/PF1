@@ -4,12 +4,12 @@ extends Node
 	"1": {
 		viewport = $"HBoxContainer/SubViewportContainer/SubViewport",
 		camera = $"HBoxContainer/SubViewportContainer/SubViewport/Camera2D",
-		player = $"HBoxContainer/SubViewportContainer/SubViewport/Principal/PlayerAzul",
+		player = $"HBoxContainer/SubViewportContainer/SubViewport/Cena_sotão/PlayerAzul",
 	},
 	"2": {
 		viewport = $"HBoxContainer/SubViewportContainer2/SubViewport",
 		camera = $"HBoxContainer/SubViewportContainer2/SubViewport/Camera2D",
-		player = $"HBoxContainer/SubViewportContainer/SubViewport/Principal/PlayerRosa",
+		player = $"HBoxContainer/SubViewportContainer/SubViewport/Cena_sotão/PlayerRosa",
 	}
 }
 
