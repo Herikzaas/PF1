@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://d1guv4xro6b1k"]
+[gd_scene load_steps=16 format=4 uid="uid://mqceoo3pkdic"]
 
 [ext_resource type="Texture2D" uid="uid://dmu1ihgjg6u8x" path="res://assets/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_i0sgq"]
 [ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/player_rosa.tscn" id="2_8wjqs"]
