@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://b33lgiuikpvc0"]
+
+[ext_resource type="Script" path="res://Scripts/Placa_Pergunta.gd" id="1_e85av"]
+[ext_resource type="Texture2D" uid="uid://dg5xy2jwvw8w6" path="res://assets/Kings and Pigs/Sprites/08-Box/Idle.png" id="2_pfw77"]
+[ext_resource type="PackedScene" uid="uid://75pocnhmvxuu" path="res://Scenes/perguntas.tscn" id="3_iaisp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3fkx3"]
+size = Vector2(20, 16)
+
+[node name="Pergunta" type="Area2D"]
+script = ExtResource("1_e85av")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_pfw77")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3fkx3")
+
+[node name="Perguntas" parent="." instance=ExtResource("3_iaisp")]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
