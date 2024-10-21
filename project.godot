@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ProjetoFinal"
-run/main_scene="res://Scenes/split_screen.tscn"
+run/main_scene="res://Scenes/Fases/Sotao/cena_sotão.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(0.145098, 0.141176, 0.133333, 1)
 config/icon="res://icon.svg"
@@ -26,6 +26,15 @@ StaticData="*res://Singletons for bd/StaticData.gd"
 window/size/viewport_width=830
 window/size/viewport_height=440
 window/stretch/mode="canvas_items"
+
+[file_customization]
+
+folder_colors={
+"res://Scenes/": "orange",
+"res://Scripts/": "yellow",
+"res://assets/": "pink",
+"res://fonts/": "purple"
+}
 
 [input]
 
