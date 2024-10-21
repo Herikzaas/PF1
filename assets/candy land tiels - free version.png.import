@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cn7tabjqqkyav"
+=======
+uid="uid://c6vnctd8lwal3"
+>>>>>>> 1f1219893aec46e36ddec8855676b9836ac48ee6
 path="res://.godot/imported/candy land tiels - free version.png-23697d06937a3883d84fe07d98cc807b.ctex"
 metadata={
 "vram_texture": false
