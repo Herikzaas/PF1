@@ -42,12 +42,12 @@
 				"correta" : "j"
 			},
 			"p6": {
-				"enunciado" : "Qual é o documento necessário para que uma pessoa seja considerada eleitora e possa votar nas eleições?",
-				"r1":"Certidão de nascimento",
-				"r2":"Título eleitoral",
-				"r3":"Cartão de vacinação",
-				"r4":"Matrícula escolar",
-				"correta" : "Título eleitoral"
+				"enunciado" : "Qual a cor da lixeira onde devem ser colocados os papéis?",
+				"r1":"Azul",
+				"r2":"Verde",
+				"r3":"Amarelo",
+				"r4":"Vermelho",
+				"correta" : "Verde"
 			},
 			"p7": {
 				"enunciado" : "Qual o feminino da palavra “carneiro”?",
