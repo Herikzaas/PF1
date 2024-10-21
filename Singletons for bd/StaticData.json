@@ -8,8 +8,183 @@
 				"r3":"Minas Gerais",
 				"r4":"Amazonas",
 				"correta" : "Minas Gerais"
-			}
-		},
+			},
+			"p2": {
+				"enunciado" : "Quais as figuras geométricas que aparecem na bandeira do Brasil?",
+				"r1":"Quadrado, losango e triângulo",
+				"r2":"Retângulo, losango e círculo",
+				"r3":"Retângulo, quadrado e losango",
+				"r4":"Quadrado, retângulo e círculo",
+				"correta" : "Retângulo, losango e círculo"
+			},
+			"p3": {
+				"enunciado" : "Quantos ovos tem 3 dúzias?",
+				"r1":"9",
+				"r2":"6",
+				"r3":"24",
+				"r4":"36",
+				"correta" : "36"
+			},
+			"p4": {
+				"enunciado" : "Quantas sílabas tem a palavra ESTUDIOSO?",
+				"r1":"9",
+				"r2":"4",
+				"r3":"5",
+				"r4":"7",
+				"correta" : "5"
+			},
+			"p5": {
+				"enunciado" : "Qual é a 10° letra do alfabeto?",
+				"r1":"j",
+				"r2":"m",
+				"r3":"l",
+				"r4":"k",
+				"correta" : "j"
+			},
+			"p6": {
+				"enunciado" : "Qual é o documento necessário para que uma pessoa seja considerada eleitora e possa votar nas eleições?",
+				"r1":"Certidão de nascimento",
+				"r2":"Título eleitoral",
+				"r3":"Cartão de vacinação",
+				"r4":"Matrícula escolar",
+				"correta" : "Título eleitoral"
+			},
+			"p7": {
+				"enunciado" : "Qual o feminino da palavra “carneiro”?",
+				"r1":"Carneira",
+				"r2":"Cabrita",
+				"r3":"Ovelha",
+				"r4":"Lebre",
+				"correta" : "Ovelha"
+			},
+			"p8": {
+				"enunciado" : "Qual o sinal de pontuação usado para iniciar a fala de um personagem?",
+				"r1":"–",
+				"r2":"?",
+				"r3":"=",
+				"r4":"!",
+				"correta" : "–"
+			},
+			"p9": {
+				"enunciado" : "Qual o número que representa 20 dezenas?",
+				"r1":"20",
+				"r2":"2010",
+				"r3":"200",
+				"r4":"2000",
+				"correta" : "200"
+			},
+			"p10": {
+				"enunciado" : "Qual país foi realizada as Olimpíadas 2024?",
+				"r1":"Brasil",
+				"r2":"França",
+				"r3":"Itália",
+				"r4":"Japão",
+				"correta" : "França"
+			},
+			"p11": {
+				"enunciado" : "O que está escrito na faixa branca da bandeira de Brasil?",
+				"r1":"Saúde e Paz",
+				"r2":"Paz e Regresso",
+				"r3":"Saúde e Ordem",
+				"r4":"Ordem e Progresso",
+				"correta" : "Ordem e Progresso"
+			},
+			"p12": {
+				"enunciado" : "Qual é o sucessor do número 1099?",
+				"r1":"10100",
+				"r2":"1098",
+				"r3":"1100",
+				"r4":"1199",
+				"correta" : "1100"
+			},
+			"p13": {
+				"enunciado" : "Quantas cores tem o arco-íris?",
+				"r1":"8",
+				"r2":"7",
+				"r3":"6",
+				"r4":"5",
+				"correta" : "7"
+			},
+			"p14": {
+				"enunciado" : "Qual o mês que vem depois de outubro?",
+				"r1":"Setembro",
+				"r2":"Novembro",
+				"r3":"Agosto",
+				"r4":"Dezembro",
+				"correta" : "Novembro"
+			},
+			"p15": {
+				"enunciado" : "Qual o mês que vem depois de outubro?",
+				"r1":"Setembro",
+				"r2":"Novembro",
+				"r3":"Agosto",
+				"r4":"Dezembro",
+				"correta" : "Novembro"
+			},
+			"p16": {
+				"enunciado" : "Qual parte da planta é responsável pela respiração?",
+				"r1":"Caule",
+				"r2":"Folha",
+				"r3":"Flor",
+				"r4":"Raiz",
+				"correta" : "Folha"
+			},
+			"p17": {
+				"enunciado" : "Qual parte da planta é responsável pela respiração?",
+				"r1":"Caule",
+				"r2":"Folha",
+				"r3":"Flor",
+				"r4":"Raiz",
+				"correta" : "Folha"
+			},
+			"p17": {
+				"enunciado" : "Quantos anos tem um século? ",
+				"r1":"100 anos",
+				"r2":"10 anos",
+				"r3":"1000 anos",
+				"r4":"10000 anos",
+				"correta" : "100 anos"
+			},
+			"p18": {
+				"enunciado" : "Quantas horas tem um dia?",
+				"r1":"36 horas",
+				"r2":"48 horas",
+				"r3":"24 horas",
+				"r4":"12 horas",
+				"correta" : "24 horas"
+			},
+			"p19": {
+				"enunciado" : "Em qual  número o ponteiro pequeno estará ao meio-dia?",
+				"r1":"10",
+				"r2":"11",
+				"r3":"12",
+				"r4":"9",
+				"correta" : "12"
+			},
+			"p20": {
+				"enunciado" : "Quantas centenas tem tem 1000 unidades?",
+				"r1":"1 centena",
+				"r2":"2 centenas",
+				"r3":"100 centenas",
+				"r4":"10 centenas",
+				"correta" : "10 centenas"
+			},
+			"p21": {
+				"enunciado" : "Qual a cor da lixeira onde devem ser colocados os papéis?",
+				"r1":"Azul",
+				"r2":"Verde",
+				"r3":"Amarelo",
+				"r4":"Vermelho",
+				"correta" : "Verde"
+			},
+			"p22": {
+				"enunciado" : "Qual a cor da lixeira onde devem ser colocados os papéis?",
+				"r1":"Azul",
+				"r2":"Verde",
+				"r3":"Amarelo",
+				"r4":"Vermelho",
+				"correta" : "Verde"
+			},
 		"teste" : {
 			"id" : 1,
 			"cost" : 15
