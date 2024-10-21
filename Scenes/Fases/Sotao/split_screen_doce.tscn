@@ -1,12 +1,12 @@
 [gd_scene load_steps=5 format=3 uid="uid://cra4txrkbalj"]
 
-[ext_resource type="Script" path="res://Scripts/SplitScreen_Doce.gd" id="1_wg660"]
-[ext_resource type="PackedScene" uid="uid://d1guv4xro6b1k" path="res://Scenes/Fases/Sotao/cena_sotão.tscn" id="2_48luh"]
-[ext_resource type="FontFile" uid="uid://diean77avqa47" path="res://fonts/FontePlayers/Planes_ValMore.ttf" id="3_8p1tg"]
-[ext_resource type="PackedScene" uid="uid://75pocnhmvxuu" path="res://Scenes/Perguntas/Database/perguntas.tscn" id="4_omxwf"]
+[ext_resource type="Script" path="res://Scripts/SplitScreen_Doce.gd" id="1_8j412"]
+[ext_resource type="PackedScene" uid="uid://d1guv4xro6b1k" path="res://Scenes/Fases/Sotao/cena_sotão.tscn" id="2_ht1hr"]
+[ext_resource type="FontFile" uid="uid://diean77avqa47" path="res://fonts/FontePlayers/Planes_ValMore.ttf" id="3_cslnw"]
+[ext_resource type="PackedScene" uid="uid://75pocnhmvxuu" path="res://Scenes/Perguntas/Database/perguntas.tscn" id="4_dajvc"]
 
 [node name="SplitScreen_Doce" type="Node"]
-script = ExtResource("1_wg660")
+script = ExtResource("1_8j412")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 offset_right = 40.0
@@ -22,7 +22,7 @@ handle_input_locally = false
 size = Vector2i(410, 440)
 render_target_update_mode = 4
 
-[node name="Cena_sotão" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_48luh")]
+[node name="Cena_sotão" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_ht1hr")]
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/SubViewportContainer/SubViewport"]
 offset = Vector2(0, -50)
@@ -46,9 +46,9 @@ offset_left = 44.0
 offset_top = 392.0
 offset_right = 387.0
 offset_bottom = 432.0
-theme_override_fonts/normal_font = ExtResource("3_8p1tg")
+theme_override_fonts/normal_font = ExtResource("3_cslnw")
 
-[node name="Perguntas" parent="." instance=ExtResource("4_omxwf")]
+[node name="Perguntas" parent="." instance=ExtResource("4_dajvc")]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 408.0

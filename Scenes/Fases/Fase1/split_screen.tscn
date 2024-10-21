@@ -1,12 +1,12 @@
 [gd_scene load_steps=5 format=3 uid="uid://h1k4niqee6l1"]
 
-[ext_resource type="Script" path="res://Scripts/SplitScreen.gd" id="1_al63c"]
-[ext_resource type="PackedScene" uid="uid://djk06e5uriyua" path="res://Scenes/Fases/Fase1/principal.tscn" id="2_x4emx"]
-[ext_resource type="FontFile" uid="uid://diean77avqa47" path="res://fonts/FontePlayers/Planes_ValMore.ttf" id="3_yy07k"]
-[ext_resource type="PackedScene" uid="uid://75pocnhmvxuu" path="res://Scenes/Perguntas/Database/perguntas.tscn" id="4_6qfib"]
+[ext_resource type="Script" path="res://Scripts/SplitScreen.gd" id="1_5l17n"]
+[ext_resource type="PackedScene" uid="uid://djk06e5uriyua" path="res://Scenes/Fases/Fase1/principal.tscn" id="2_0bvgw"]
+[ext_resource type="FontFile" uid="uid://diean77avqa47" path="res://fonts/FontePlayers/Planes_ValMore.ttf" id="3_n6pgv"]
+[ext_resource type="PackedScene" uid="uid://75pocnhmvxuu" path="res://Scenes/Perguntas/Database/perguntas.tscn" id="4_nmcic"]
 
 [node name="SplitScreen" type="Node"]
-script = ExtResource("1_al63c")
+script = ExtResource("1_5l17n")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 offset_right = 40.0
@@ -22,7 +22,7 @@ handle_input_locally = false
 size = Vector2i(410, 440)
 render_target_update_mode = 4
 
-[node name="Principal" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_x4emx")]
+[node name="Principal" parent="HBoxContainer/SubViewportContainer/SubViewport" instance=ExtResource("2_0bvgw")]
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/SubViewportContainer/SubViewport"]
 offset = Vector2(0, -50)
@@ -45,9 +45,9 @@ offset_left = 44.0
 offset_top = 392.0
 offset_right = 387.0
 offset_bottom = 432.0
-theme_override_fonts/normal_font = ExtResource("3_yy07k")
+theme_override_fonts/normal_font = ExtResource("3_n6pgv")
 
-[node name="Perguntas" parent="." instance=ExtResource("4_6qfib")]
+[node name="Perguntas" parent="." instance=ExtResource("4_nmcic")]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 408.0

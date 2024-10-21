@@ -1,7 +1,7 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://dl3bjftyd617t"]
 
-[ext_resource type="FontFile" uid="uid://diean77avqa47" path="res://fonts/FontePlayers/Planes_ValMore.ttf" id="1_vc2rd"]
+[ext_resource type="FontFile" uid="uid://diean77avqa47" path="res://fonts/FontePlayers/Planes_ValMore.ttf" id="1_p86sf"]
 
 [resource]
-default_font = ExtResource("1_vc2rd")
-default_font_size = 23
+default_font = ExtResource("1_p86sf")
+default_font_size = 20

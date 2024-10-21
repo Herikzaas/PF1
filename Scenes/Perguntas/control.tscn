@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dsq0eimp2b0ew"]
 
-[ext_resource type="Theme" uid="uid://dl3bjftyd617t" path="res://font.tres" id="1_2kw0c"]
+[ext_resource type="Theme" uid="uid://dl3bjftyd617t" path="res://font.tres" id="1_4jm05"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlsos"]
 
@@ -37,7 +37,7 @@ size_flags_vertical = 8
 
 [node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-theme = ExtResource("1_2kw0c")
+theme = ExtResource("1_4jm05")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -45,14 +45,14 @@ layout_mode = 2
 [node name="Button2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("1_2kw0c")
+theme = ExtResource("1_4jm05")
 text = "btn1
 "
 
 [node name="Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("1_2kw0c")
+theme = ExtResource("1_4jm05")
 text = "btn2
 "
 
@@ -66,14 +66,14 @@ layout_mode = 2
 [node name="Button3" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("1_2kw0c")
+theme = ExtResource("1_4jm05")
 text = "btn1
 "
 
 [node name="Button4" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("1_2kw0c")
+theme = ExtResource("1_4jm05")
 text = "btn2
 "
 
@@ -88,7 +88,7 @@ size_flags_vertical = 8
 
 [node name="Label2" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-theme = ExtResource("1_2kw0c")
+theme = ExtResource("1_4jm05")
 text = "adia
 afaf
 afa
@@ -100,14 +100,14 @@ layout_mode = 2
 [node name="Button2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer2/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("1_2kw0c")
+theme = ExtResource("1_4jm05")
 text = "btn1
 "
 
 [node name="Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer2/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("1_2kw0c")
+theme = ExtResource("1_4jm05")
 text = "btn2
 "
 
@@ -121,13 +121,13 @@ layout_mode = 2
 [node name="Button3" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer2/HBoxContainer4"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("1_2kw0c")
+theme = ExtResource("1_4jm05")
 text = "btn1
 "
 
 [node name="Button4" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer2/HBoxContainer4"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("1_2kw0c")
+theme = ExtResource("1_4jm05")
 text = "btn2
 "
