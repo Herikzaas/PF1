@@ -1,0 +1,143 @@
+[gd_scene load_steps=7 format=4 uid="uid://cf3leb0hyg022"]
+
+[ext_resource type="Texture2D" uid="uid://r3t46656x3pt" path="res://assets/Tilesets/Primavera/tileset.png" id="1_t12cc"]
+[ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/Players/Azul/player_azul.tscn" id="2_m1q7a"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ahcg0"]
+texture = ExtResource("1_t12cc")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_kndxa"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 2
+sources/0 = SubResource("TileSetAtlasSource_ahcg0")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7qy10"]
+texture = ExtResource("1_t12cc")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_01tvo"]
+sources/0 = SubResource("TileSetAtlasSource_7qy10")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAA8AAAAAAAEAAAAAABAAAAAAAAIAAAAAABEAAAAAAAMAAAABAA8AAAABAAEAAAABABAAAAABAAIAAAAAAA4AAAAAAAAAAAABAA4AAAABAAAAAAACAA4AAAACAAAAAAACAA8AAAABAAEAAAADAA8AAAABAAEAAAAEAA8AAAACAAEAAAACABAAAAABAAMAAAADABAAAAABAAIAAAAEABAAAAACAAIAAAADABEAAAABAAMAAAABABEAAAABAAIAAAACABEAAAABAAIAAAAEABEAAAACAAIAAAAGAA4AAAANAAIAAAAHAA4AAAAOAAIAAAAIAA4AAAAPAAIAAAALAA0AAAAPAAIAAAAKAA0AAAANAAIAAAAMAA0AAAAPAAIAAAAOAAwAAAANAAIAAAAPAAwAAAAOAAIAAAAQAAwAAAAPAAIAAAARAAwAAAAAAAEAAAARAA0AAAAAAAIAAAASAAwAAAABAAEAAAASAA0AAAABAAIAAAASAA4AAAABAAIAAAATAA0AAAABAAIAAAAUAA0AAAABAAIAAAAVAA0AAAACAAIAAAATAA4AAAABAAIAAAAUAA4AAAABAAIAAAAVAA4AAAACAAMAAAATAAwAAAABAAEAAAAUAAwAAAABAAEAAAAVAAwAAAACAAEAAAARAA4AAAAAAAMAAAA=")
+tile_set = SubResource("TileSet_kndxa")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAADAA4AAAADAAAAAAAFABAAAAAEAAIAAAAGABAAAAAEAAIAAAAHABAAAAADAAIAAAAIABAAAAAEAAIAAAAJABAAAAADAAIAAAAKABAAAAAEAAIAAAALABAAAAADAAIAAAAMABAAAAADAAIAAAAFABEAAAADAAMAAAAGABEAAAADAAMAAAAHABEAAAADAAMAAAAIABEAAAADAAMAAAAJABEAAAADAAMAAAAKABEAAAADAAMAAAALABEAAAADAAMAAAAMABEAAAADAAMAAAATAAsAAAAFAAMAAAAUAAsAAAAGAAMAAAA=")
+tile_set = SubResource("TileSet_01tvo")
+
+[node name="PlayerAzul" parent="." instance=ExtResource("2_m1q7a")]
+position = Vector2(22, 224)
