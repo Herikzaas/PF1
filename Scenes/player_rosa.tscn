@@ -154,7 +154,6 @@ size = Vector2(20, 27)
 
 [node name="PlayerRosa" type="CharacterBody2D" groups=["Rosa"]]
 position = Vector2(208, 128)
-collision_mask = 7
 script = ExtResource("1_8hvmp")
 metadata/_edit_group_ = true
 

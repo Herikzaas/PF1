@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ProjetoFinal"
-run/main_scene="res://Scenes/cena_sotão.tscn"
+run/main_scene="res://Scenes/split_screen.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(0.145098, 0.141176, 0.133333, 1)
 config/icon="res://icon.svg"
@@ -59,7 +59,6 @@ Resp1Azul={
 
 2d_physics/layer_1="Personagens"
 2d_physics/layer_2="Solo"
-2d_physics/layer_3="Inimigos"
 
 [rendering]
 
