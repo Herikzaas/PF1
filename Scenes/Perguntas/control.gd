@@ -1,6 +1,6 @@
 extends Control
 
-var i = randi_range(1,10)
+var i = randi_range(1,35)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -25,10 +25,6 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Btn_Resp4") and $MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa.visible == true :
 		confere($MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer4/resp4,i)
 	
-	if $"/root/Global".p_visi == true :
-		$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa.visible = true
-	else :
-		$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa.visible = false
 func confere(btn,i):
 	if btn.text == (StaticData.itemData['perguntas']["fase1"][i]["correta"]) :
-		$"/root/Global".p_visi = false
+		self.queue_free()

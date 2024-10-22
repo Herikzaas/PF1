@@ -1,12 +1,18 @@
 extends Control
 
+var perguntas = preload("res://Scenes/Perguntas/margem_perguntas.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	await get_tree().create_timer(5).timeout 
-	$"/root/Global".p_visi = true
+	pass
+
+
+func _on_bau_collision_body_entered(body: Node2D) -> void:
+	var hold = perguntas.instantiate()
+	get_tree().get_root().add_child(hold)
+	
