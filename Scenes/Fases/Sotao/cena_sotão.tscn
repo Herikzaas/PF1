@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://8iul07vcltcc" path="res://assets/Tilesets/Kings and Pigs/Sprites/14-TileSets/Decorations (32x32).png" id="2_aodk8"]
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="2_k5tus"]
 [ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/Players/Azul/player_azul.tscn" id="5_vksob"]
-[ext_resource type="PackedScene" uid="uid://dsq0eimp2b0ew" path="res://Scenes/Perguntas/control.tscn" id="6_71bay"]
+[ext_resource type="PackedScene" uid="uid://cet5a70ln313s" path="res://Scenes/Perguntas/margem_perguntas.tscn" id="7_yxvql"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rsjqn"]
 texture = ExtResource("1_i0sgq")
@@ -4537,20 +4537,6 @@ collision_mask = 15
 [node name="CollisionShape2D" type="CollisionShape2D" parent="limiteesq"]
 shape = SubResource("SegmentShape2D_xvexo")
 
-[node name="MargemPerguntas" type="MarginContainer" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 30
-
-[node name="Holder_Perguntas" parent="MargemPerguntas" instance=ExtResource("6_71bay")]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 1
+[node name="MargemPerguntas" parent="." instance=ExtResource("7_yxvql")]
+layout_mode = 0
+anchors_preset = 0

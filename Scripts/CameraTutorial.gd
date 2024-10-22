@@ -10,3 +10,4 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	self.position = (p1.position + p2.position)*0.5
+	$"../MargemPerguntas".position.x = self.position.x
