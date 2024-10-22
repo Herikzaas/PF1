@@ -169,6 +169,8 @@
 				"r4":"10 centenas",
 				"correta" : "10 centenas"
 			},
+		},
+		"fase2": {
 			"p21": {
 				"enunciado" : "Qual a cor da lixeira onde devem ser colocados os papéis?",
 				"r1":"Azul",
