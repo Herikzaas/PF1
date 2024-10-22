@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=4 uid="uid://cf3leb0hyg022"]
+[gd_scene load_steps=11 format=4 uid="uid://cf3leb0hyg022"]
 
 [ext_resource type="Texture2D" uid="uid://r3t46656x3pt" path="res://assets/Tilesets/Primavera/tileset.png" id="1_t12cc"]
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="2_1kuib"]
 [ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/Players/Azul/player_azul.tscn" id="2_m1q7a"]
+[ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/Players/Rosa/player_rosa.tscn" id="4_mk4h0"]
+[ext_resource type="Script" path="res://Scripts/CameraTutorial.gd" id="5_tjmta"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ahcg0"]
 texture = ExtResource("1_t12cc")
@@ -1467,3 +1469,13 @@ tile_set = SubResource("TileSet_01tvo")
 
 [node name="PlayerAzul" parent="." instance=ExtResource("2_m1q7a")]
 position = Vector2(22, 224)
+
+[node name="PlayerRosa" parent="." instance=ExtResource("4_mk4h0")]
+position = Vector2(43, 196)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.0
+drag_right_margin = 0.0
+script = ExtResource("5_tjmta")
