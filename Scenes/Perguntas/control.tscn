@@ -1,10 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://dsq0eimp2b0ew"]
+[gd_scene load_steps=12 format=3 uid="uid://dsq0eimp2b0ew"]
 
 [ext_resource type="Theme" uid="uid://dl3bjftyd617t" path="res://font.tres" id="1_4jm05"]
 [ext_resource type="Script" path="res://Scenes/Perguntas/control.gd" id="1_uqnuk"]
 [ext_resource type="Texture2D" uid="uid://d311apviba8vu" path="res://GUI-ezgif.com-crop.png" id="3_71fd8"]
-[ext_resource type="Texture2D" uid="uid://b2x77t8hlpldr" path="res://assets/Icons/h.png" id="4_1y6l3"]
-[ext_resource type="Texture2D" uid="uid://snnd8mbec4bx" path="res://assets/Icons/j.png" id="5_si1vo"]
+[ext_resource type="Texture2D" uid="uid://be6xsfnm7mwvb" path="res://assets/Icons/h.png" id="4_2hww3"]
+[ext_resource type="Texture2D" uid="uid://j6eemidfns8q" path="res://assets/Icons/j.png" id="5_si1vo"]
 [ext_resource type="Texture2D" uid="uid://dn4hpen6airjp" path="res://assets/Icons/k.png" id="6_0pdty"]
 [ext_resource type="Texture2D" uid="uid://bbynljcrv1s66" path="res://assets/Icons/l.png" id="7_rtys6"]
 
@@ -16,11 +16,6 @@ texture_margin_left = 24.0
 texture_margin_top = 24.0
 texture_margin_right = 24.0
 texture_margin_bottom = 24.0
-
-[sub_resource type="LabelSettings" id="LabelSettings_ajv7h"]
-outline_size = 1
-outline_color = Color(0.45992, 0.220607, 0.158773, 1)
-shadow_size = 5
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlsos"]
 
@@ -71,7 +66,6 @@ theme = ExtResource("1_4jm05")
 theme_override_styles/normal = SubResource("StyleBoxTexture_tbaxl")
 text = "adia
 af"
-label_settings = SubResource("LabelSettings_ajv7h")
 horizontal_alignment = 1
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa"]
@@ -81,7 +75,7 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_4jm05")
-theme_override_icons/icon = ExtResource("4_1y6l3")
+theme_override_icons/icon = ExtResource("4_2hww3")
 text = "btn1
 "
 
