@@ -169,6 +169,8 @@
 				"r4":"10 centenas",
 				"correta" : "10 centenas"
 			},
+		},
+		"fase2": {
 			"p21": {
 				"enunciado" : "Qual a cor da lixeira onde devem ser colocados os papéis?",
 				"r1":"Azul",
@@ -178,12 +180,117 @@
 				"correta" : "Verde"
 			},
 			"p22": {
-				"enunciado" : "Qual a cor da lixeira onde devem ser colocados os papéis?",
-				"r1":"Azul",
-				"r2":"Verde",
-				"r3":"Amarelo",
-				"r4":"Vermelho",
-				"correta" : "Verde"
+				"enunciado" : "Tipo sanguíneo considerado doador universal",
+				"r1":"Tipo A",
+				"r2":"Tipo B",
+				"r3":"Tipo O",
+				"r4":"Tipo ABO",
+				"correta" : "Tipo O"
+			},
+			"p23": {
+				"enunciado" : "Qual o orgão do corpo que comanda as nossas ações?",
+				"r1":"Intestino delgado",
+				"r2":"Coração",
+				"r3":"Cérebro",
+				"r4":"Fígado",
+				"correta" : "Cérebro"
+			},
+			"p24": {
+				"enunciado" : "De onde é a invenção do chuveiro elétrico?",
+				"r1":"França",
+				"r2":"Inglaterra",
+				"r3":"Brasil",
+				"r4":"Austrália",
+				"correta" : "Brasil"
+			},
+			"p25": {
+				"enunciado" : "O que a palavra legend significa em português?",
+				"r1":"Legenda",
+				"r2":"Conto",
+				"r3":"História",
+				"r4":"Lenda",
+				"correta" : "Lenda"
+			},
+			"p26": {
+				"enunciado" : "Qual o número mínimo de jogadores em cada time numa partida de futebol?",
+				"r1":"8",
+				"r2":"10",
+				"r3":"9",
+				"r4":"7",
+				"correta" : "7"
+			},
+			"p27": {
+				"enunciado" : "Quanto tempo a luz do Sol demora para chegar à Terra?",
+				"r1":"12 minutos",
+				"r2":"1 dia",
+				"r3":"8 minutos",
+				"r4":"12 segundos",
+				"correta" : "8 minutos"
+			},
+			
+			"p28": {
+				"enunciado" : "Qual personagem folclórico que gosta de fumo?",
+				"r1":"Caipora",
+				"r2":"Saci",
+				"r3":"Lobisomem",
+				"r4":"Negrinho do Pastoreio",
+				"correta" : "Caipora"
+			},
+			"p29": {
+				"enunciado" : "Conjunção do verbo caber da 1° pessoa do singular do presente do indicativo",
+				"r1":"Eu caibo",
+				"r2":"Ele cabe",
+				"r3":"Que eu caiba",
+				"r4":"Eu cabo",
+				"correta" : "Eu caibo"
+			},
+			"p30": {
+				"enunciado" : "Vasos que transportam sangue do coração para a periferia do corpo",
+				"r1":"veias",
+				"r2":"átrios",
+				"r3":"ventrículos",
+				"r4":"artérias",
+				"correta" : "artérias"
+			},
+			"p31": {
+				"enunciado" : "Que animal gruguleja?",
+				"r1":"o pavão",
+				"r2":"o peru",
+				"r3":"a garça",
+				"r4":"a cacatua",
+				"correta" : "o peru"
+			},
+			"p33": {
+				"enunciado" : "Obra arquitetônica brasileira é uma das Sete Maravilhas do Mundo Moderno?",
+				"r1":"Elevador Lacerda",
+				"r2":"Cristo Redentor",
+				"r3":"Estação da Luz",
+				"r4":"One Tower",
+				"correta" : "Cristo Redentor"
+			},
+			"p34": {
+				"enunciado" : "Complete o provérbio “A cavalo dado …”",
+				"r1":"sai caro",
+				"r2":"tem medo de água fria",
+				"r3":"não se olha o rabo",
+				"r4":"não se olha os dentes",
+				"correta" : "não se olha os dentes"
+			},
+			"p35": {
+				"enunciado" : "Quais as maiores pandemias da história?",
+				"r1":"Varíola e hipertensão",
+				"r2":"Gripe espanhola e câncer",
+				"r3":"não se olha o rabo",
+				"r4":"Peste negra e covid-19",
+				"correta" : "Peste negra e covid-19"
+			},
+			"p35": {
+				"enunciado" : "Qual a função do coração?",
+				"r1":"Bombear sangue para o corpo",
+				"r2":"Produzir saliva",
+				"r3":"Controlar a temperatura do corpo",
+				"r4":"Digestar alimentos",
+				"correta" : "Bombear sangue para o corpo"
 			},
 		"teste" : {
 			"id" : 1,
