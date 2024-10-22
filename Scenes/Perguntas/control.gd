@@ -1,6 +1,6 @@
 extends Control
 
-var i = randi_range(1,10)
+var i = randi_range(1,33)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
