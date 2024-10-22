@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d06rp43ghcjmm"
-path="res://.godot/imported/bg_sky.png-4fdd7cd2963ea23ba170ef124eabe65c.ctex"
+uid="uid://s5yq4eyu0jgg"
+path="res://.godot/imported/tileset.png-e9e1514bf8c97ab104a6811805a7c978.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tilesets/Primavera/parallax/bg_sky.png"
-dest_files=["res://.godot/imported/bg_sky.png-4fdd7cd2963ea23ba170ef124eabe65c.ctex"]
+source_file="res://assets/Tilesets/Assets_mundo_embaixodagua/Pixel-16px Underwater/tileset/tileset.png"
+dest_files=["res://.godot/imported/tileset.png-e9e1514bf8c97ab104a6811805a7c978.ctex"]
 
 [params]
 

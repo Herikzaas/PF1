@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d06rp43ghcjmm"
-path="res://.godot/imported/bg_sky.png-4fdd7cd2963ea23ba170ef124eabe65c.ctex"
+uid="uid://cw48nwg75la1"
+path="res://.godot/imported/parallax4.png-c0bf9d144f0a1d3ba57626102c2124d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tilesets/Primavera/parallax/bg_sky.png"
-dest_files=["res://.godot/imported/bg_sky.png-4fdd7cd2963ea23ba170ef124eabe65c.ctex"]
+source_file="res://assets/Tilesets/Assets_mundo_embaixodagua/Pixel-16px Underwater/parallax/parallax4.png"
+dest_files=["res://.godot/imported/parallax4.png-c0bf9d144f0a1d3ba57626102c2124d8.ctex"]
 
 [params]
 

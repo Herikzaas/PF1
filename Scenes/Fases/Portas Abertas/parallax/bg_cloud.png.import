@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d06rp43ghcjmm"
-path="res://.godot/imported/bg_sky.png-4fdd7cd2963ea23ba170ef124eabe65c.ctex"
+uid="uid://d1cw1piwrfu0l"
+path="res://.godot/imported/bg_cloud.png-eadf50ab48696a9b6f50904b74b1b93f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tilesets/Primavera/parallax/bg_sky.png"
-dest_files=["res://.godot/imported/bg_sky.png-4fdd7cd2963ea23ba170ef124eabe65c.ctex"]
+source_file="res://Scenes/Fases/Portas Abertas/parallax/bg_cloud.png"
+dest_files=["res://.godot/imported/bg_cloud.png-eadf50ab48696a9b6f50904b74b1b93f.ctex"]
 
 [params]
 
