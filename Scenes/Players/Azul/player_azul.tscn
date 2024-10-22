@@ -153,7 +153,7 @@ animations = [{
 size = Vector2(20, 27)
 
 [node name="PlayerAzul" type="CharacterBody2D" groups=["Azul"]]
-position = Vector2(256, 128)
+position = Vector2(54, 354)
 script = ExtResource("1_eyxnc")
 metadata/_edit_group_ = true
 
@@ -165,3 +165,9 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_yjjkt")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 1
+limit_top = 1
+limit_right = 1394
+limit_bottom = 1
