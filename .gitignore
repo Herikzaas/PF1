@@ -13,3 +13,4 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+Scenes/Fases/Portas Abertas/primavera.tscn
