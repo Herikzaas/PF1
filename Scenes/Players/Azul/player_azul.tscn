@@ -154,6 +154,7 @@ size = Vector2(20, 27)
 
 [node name="PlayerAzul" type="CharacterBody2D" groups=["players"]]
 position = Vector2(256, 128)
+collision_layer = 2
 script = ExtResource("1_eyxnc")
 metadata/_edit_group_ = true
 

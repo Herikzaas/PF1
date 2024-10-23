@@ -11,29 +11,43 @@ var em_escada = false
 @onready var anim = $AnimRosa as AnimatedSprite2D
 
 func _physics_process(delta):
-	# Add the gravity.
+	var direction = Input.get_axis("ui_left", "ui_right")
+	
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	
 	if em_escada :
 		if Input.is_action_pressed("Subir_Escada"):
 			velocity.y = -SPEED
-			anim.play("escada")
+			animation(direction)
+		elif Input.is_action_just_pressed("Descer_Escada"):
+			velocity.y = SPEED
+			animation(direction)
 	# Handle jump.
 	if Input.is_action_just_pressed("PuloRosa") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-		anim.play("jump")
+		animation(direction)
 		
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_axis("ui_left", "ui_right")
-	if direction!=0 and not em_escada:
+	if direction!=0:
 		velocity.x = direction * SPEED
-		anim.play("run")
+		animation(direction)
 		anim.scale.x = direction
-	else:
+	else :
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		anim.play("idle")
+		animation(direction)
 
 	move_and_slide()
+
+func animation(direction):
+	if em_escada :
+		if Input.is_action_pressed("Subir_Escada"):
+			anim.play('escada')
+		if Input.is_action_just_pressed("Descer_Escada"):
+			anim.play('escada')
+	
+	if direction == 0 and not em_escada :
+		anim.play('idle')
+	
+	if direction != 0 :
+		anim.play('run')
+		
