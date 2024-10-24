@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://1jp0b61mqoyj"]
+
+[ext_resource type="Script" path="res://Scenes/Exclamacao/exclamacao.gd" id="1_5yweu"]
+[ext_resource type="Texture2D" uid="uid://diooyrjto3ax3" path="res://assets/Icons/exclamacao'.png" id="1_mjjfd"]
+[ext_resource type="Texture2D" uid="uid://cqyb8pev8voyo" path="res://assets/Icons/exc3.png" id="2_h4v1f"]
+[ext_resource type="Texture2D" uid="uid://eosmqll1v3v6" path="res://assets/Icons/pixil-frame-0.png" id="4_ytpta"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_081fh"]
+atlas = ExtResource("1_mjjfd")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ig8lu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_h4v1f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_081fh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ytpta")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Exclamacao" type="Area2D"]
+script = ExtResource("1_5yweu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ig8lu")
+autoplay = "default"
+frame_progress = 0.203838

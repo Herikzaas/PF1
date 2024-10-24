@@ -1,9 +1,10 @@
-[gd_scene load_steps=19 format=4 uid="uid://cf3leb0hyg022"]
+[gd_scene load_steps=21 format=4 uid="uid://cf3leb0hyg022"]
 
 [ext_resource type="Texture2D" uid="uid://r3t46656x3pt" path="res://assets/Tilesets/Primavera/tileset.png" id="1_t12cc"]
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="2_1kuib"]
 [ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/Players/Azul/player_azul.tscn" id="2_m1q7a"]
 [ext_resource type="Texture2D" uid="uid://c7nsnpbrpn5gi" path="res://assets/Tilesets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="3_0otan"]
+[ext_resource type="PackedScene" uid="uid://1jp0b61mqoyj" path="res://Scenes/Exclamacao/exclamacao.tscn" id="4_1vji1"]
 [ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/Players/Rosa/player_rosa.tscn" id="4_mk4h0"]
 [ext_resource type="Script" path="res://Scripts/CameraTutorial.gd" id="5_tjmta"]
 [ext_resource type="Texture2D" uid="uid://d06rp43ghcjmm" path="res://assets/Tilesets/Primavera/parallax/bg_sky.png" id="7_pae15"]
@@ -1565,6 +1566,9 @@ texture = ExtResource("3_0otan")
 sources/0 = SubResource("TileSetAtlasSource_yd7tx")
 sources/1 = SubResource("TileSetAtlasSource_h7u3m")
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_q0vpj"]
+b = Vector2(0, 480)
+
 [node name="Node2D" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -1603,6 +1607,12 @@ repeat_times = 7
 position = Vector2(0, -32)
 texture = ExtResource("9_uey51")
 centered = false
+
+[node name="Exclamacao" parent="." instance=ExtResource("4_1vji1")]
+position = Vector2(451, 216)
+
+[node name="Exclamacao2" parent="." instance=ExtResource("4_1vji1")]
+position = Vector2(51, 216)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(-21, 2)
@@ -1644,3 +1654,8 @@ stream = ExtResource("11_vtpvr")
 volume_db = -19.314
 autoplay = true
 parameters/looping = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("SegmentShape2D_q0vpj")

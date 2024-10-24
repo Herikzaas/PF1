@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://d1guv4xro6b1k"]
+[gd_scene load_steps=20 format=4 uid="uid://d1guv4xro6b1k"]
 
 [ext_resource type="Script" path="res://Scenes/Fases/Sotao/cena_sotão.gd" id="1_1bf6v"]
 [ext_resource type="Texture2D" uid="uid://dmu1ihgjg6u8x" path="res://assets/Tilesets/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_i0sgq"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="2_k5tus"]
 [ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/Players/Azul/player_azul.tscn" id="5_vksob"]
 [ext_resource type="PackedScene" uid="uid://bppw14ulettab" path="res://Scenes/Escadas/escadas.tscn" id="7_i26dp"]
+[ext_resource type="PackedScene" uid="uid://1jp0b61mqoyj" path="res://Scenes/Exclamacao/exclamacao.tscn" id="8_vfw83"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rsjqn"]
 texture = ExtResource("1_i0sgq")
@@ -4545,10 +4546,10 @@ tile_map_data = PackedByteArray("AAAvABYAAAAsAAAAAAAvABkAAAAsAAMAAAAwABYAAAAtAAA
 tile_set = SubResource("TileSet_3govm")
 
 [node name="PlayerRosa" parent="." groups=["Rosa"] instance=ExtResource("2_8wjqs")]
-position = Vector2(592, 208)
+position = Vector2(72, 400)
 
 [node name="PlayerAzul" parent="." instance=ExtResource("5_vksob")]
-position = Vector2(412, 168)
+position = Vector2(32, 400)
 
 [node name="limiteesq" type="StaticBody2D" parent="."]
 disable_mode = 1
@@ -4572,6 +4573,9 @@ position = Vector2(304, 264)
 
 [node name="CollisionShape2D" parent="Escadas" index="0"]
 position = Vector2(16, 76)
+
+[node name="Exclamacao" parent="." instance=ExtResource("8_vfw83")]
+position = Vector2(720, 211)
 
 [connection signal="body_entered" from="BauCollision" to="." method="_on_bau_collision_body_entered"]
 [connection signal="body_exited" from="Escadas" to="Escadas" method="_on_body_exited"]
