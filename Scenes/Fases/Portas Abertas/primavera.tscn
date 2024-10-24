@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://cf3leb0hyg022"]
+[gd_scene load_steps=19 format=4 uid="uid://cf3leb0hyg022"]
 
 [ext_resource type="Texture2D" uid="uid://r3t46656x3pt" path="res://assets/Tilesets/Primavera/tileset.png" id="1_t12cc"]
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="2_1kuib"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://d06rp43ghcjmm" path="res://assets/Tilesets/Primavera/parallax/bg_sky.png" id="7_pae15"]
 [ext_resource type="Texture2D" uid="uid://bwgipnq4mgok7" path="res://assets/Tilesets/Primavera/parallax/bg_mount.png" id="8_ksifo"]
 [ext_resource type="Texture2D" uid="uid://du8mq45tyuoxk" path="res://assets/Tilesets/Primavera/parallax/bg_cloud.png" id="9_uey51"]
+[ext_resource type="PackedScene" uid="uid://cwaxgwmv7utv5" path="res://Scenes/Perguntas/margem_perguntas.tscn" id="10_ttgkp"]
+[ext_resource type="AudioStream" uid="uid://ccg8n75kkl372" path="res://assets/Musics/Town - Reminiscence.ogg" id="11_vtpvr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ahcg0"]
 texture = ExtResource("1_t12cc")
@@ -1563,7 +1565,13 @@ texture = ExtResource("3_0otan")
 sources/0 = SubResource("TileSetAtlasSource_yd7tx")
 sources/1 = SubResource("TileSetAtlasSource_h7u3m")
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="BG" type="Node2D" parent="."]
 
@@ -1617,3 +1625,22 @@ drag_vertical_enabled = true
 drag_left_margin = 0.0
 drag_right_margin = 0.0
 script = ExtResource("5_tjmta")
+
+[node name="MargemPerguntas" parent="." instance=ExtResource("10_ttgkp")]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -25.0
+offset_right = 20.0
+offset_bottom = 25.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_vtpvr")
+volume_db = -19.314
+autoplay = true
+parameters/looping = true

@@ -7,6 +7,8 @@ const JUMP_VELOCITY = -390.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var em_escada = false
+var morto = false
+
 
 @onready var anim = $AnimRosa as AnimatedSprite2D
 
@@ -26,7 +28,7 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("PuloRosa") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-		animation(direction)
+		
 		
 	if direction!=0:
 		velocity.x = direction * SPEED
@@ -35,7 +37,12 @@ func _physics_process(delta):
 	else :
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		animation(direction)
+	
+	if morto :
+		velocity.x = 0
+		anim.play('dead')
 
+		
 	move_and_slide()
 
 func animation(direction):
@@ -45,9 +52,14 @@ func animation(direction):
 		if Input.is_action_just_pressed("Descer_Escada"):
 			anim.play('escada')
 	
-	if direction == 0 and not em_escada :
+	if direction == 0 and not em_escada and not morto:
 		anim.play('idle')
 	
-	if direction != 0 :
+	if direction != 0 and not morto and not em_escada and is_on_floor():
 		anim.play('run')
-		
+	
+
+
+func _on_anim_rosa_animation_finished() -> void:
+	if anim.animation == 'dead' :
+		queue_free()

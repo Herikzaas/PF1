@@ -1,10 +1,43 @@
-[gd_scene load_steps=30 format=3 uid="uid://dxbi7vjfcksvm"]
+[gd_scene load_steps=39 format=3 uid="uid://dxbi7vjfcksvm"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerRosa.gd" id="1_8hvmp"]
 [ext_resource type="Texture2D" uid="uid://bodjahrt08r86" path="res://assets/Players/1 Pink_Monster/Pink_Monster_Climb_4.png" id="2_ovge6"]
 [ext_resource type="Texture2D" uid="uid://bxyyxrvru51y8" path="res://assets/Players/1 Pink_Monster/Pink_Monster_Idle_4.png" id="2_v441s"]
 [ext_resource type="Texture2D" uid="uid://bdgw3m1a20sdn" path="res://assets/Players/1 Pink_Monster/Pink_Monster_Jump_8.png" id="3_1gtku"]
+[ext_resource type="Texture2D" uid="uid://cjh0rgbrdf6lw" path="res://assets/Players/1 Pink_Monster/Pink_Monster_Death_8.png" id="3_6o5vg"]
 [ext_resource type="Texture2D" uid="uid://cqt1mnibuml0d" path="res://assets/Players/1 Pink_Monster/Pink_Monster_Run_6.png" id="4_spuas"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qsm2"]
+atlas = ExtResource("3_6o5vg")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2glhv"]
+atlas = ExtResource("3_6o5vg")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_spir3"]
+atlas = ExtResource("3_6o5vg")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7pvyt"]
+atlas = ExtResource("3_6o5vg")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jva4j"]
+atlas = ExtResource("3_6o5vg")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8pfl"]
+atlas = ExtResource("3_6o5vg")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcueu"]
+atlas = ExtResource("3_6o5vg")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ys642"]
+atlas = ExtResource("3_6o5vg")
+region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r1kcr"]
 atlas = ExtResource("2_ovge6")
@@ -98,6 +131,35 @@ region = Rect2(160, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_2qsm2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2glhv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_spir3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7pvyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jva4j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8pfl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kcueu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ys642")
+}],
+"loop": false,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_r1kcr")
 }, {
 "duration": 1.0,
@@ -157,7 +219,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 5.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -194,10 +256,11 @@ metadata/_edit_group_ = true
 
 [node name="AnimRosa" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mo784")
-animation = &"escada"
+animation = &"jump"
 autoplay = "idle"
-frame_progress = 0.503665
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_wwibo")
+
+[connection signal="animation_finished" from="AnimRosa" to="." method="_on_anim_rosa_animation_finished"]
