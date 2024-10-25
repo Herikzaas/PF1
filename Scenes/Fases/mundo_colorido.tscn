@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://cc04w5ffb3887"]
+[gd_scene load_steps=24 format=4 uid="uid://cc04w5ffb3887"]
 
 [ext_resource type="Texture2D" uid="uid://s5yq4eyu0jgg" path="res://assets/Tilesets/Assets_mundo_embaixodagua/Pixel-16px Underwater/tileset/tileset.png" id="1_1snqq"]
 [ext_resource type="Texture2D" uid="uid://cw48nwg75la1" path="res://assets/Tilesets/Assets_mundo_embaixodagua/Pixel-16px Underwater/parallax/parallax4.png" id="1_guef1"]
@@ -8,6 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="3_0u57c"]
 [ext_resource type="Texture2D" uid="uid://dj7qr7vuy3pin" path="res://assets/Tilesets/Assets_mundo_embaixodagua/Pixel-16px Underwater/parallax/parallax2.png" id="3_oybk2"]
 [ext_resource type="Texture2D" uid="uid://cd7qj2oupbwpf" path="res://assets/Tilesets/Assets_mundo_embaixodagua/Pixel-16px Underwater/parallax/parallax1.png" id="3_pugke"]
+[ext_resource type="Script" path="res://Scripts/CameraTutorial.gd" id="9_hb63y"]
+[ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/Players/Rosa/player_rosa.tscn" id="10_6pc31"]
+[ext_resource type="PackedScene" uid="uid://cwaxgwmv7utv5" path="res://Scenes/Perguntas/margem_perguntas.tscn" id="11_sc0sg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wukyb"]
 texture = ExtResource("1_1snqq")
@@ -4188,7 +4191,13 @@ texture = ExtResource("1_1snqq")
 [sub_resource type="TileSet" id="TileSet_rp16g"]
 sources/0 = SubResource("TileSetAtlasSource_ab43e")
 
-[node name="mundo_embaixo_agua" type="Node2D"]
+[node name="mundo_embaixo_agua" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="ParallaxBackground" type="Node2D" parent="."]
 scale = Vector2(1.75, 1.75)
@@ -4241,4 +4250,13 @@ tile_map_data = PackedByteArray("AAAcABkAAAAIAAIAAAAdABkAAAAJAAIAAAA2ABkAAAAIAAI
 tile_set = SubResource("TileSet_rp16g")
 
 [node name="PlayerAzul" parent="." instance=ExtResource("2_662uy")]
-position = Vector2(612, 175)
+position = Vector2(52, 397)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("9_hb63y")
+
+[node name="PlayerRosa" parent="." instance=ExtResource("10_6pc31")]
+position = Vector2(85, 396)
+
+[node name="MargemPerguntas" parent="." instance=ExtResource("11_sc0sg")]
+layout_mode = 1

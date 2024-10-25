@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://cf3leb0hyg022"]
+[gd_scene load_steps=22 format=4 uid="uid://cf3leb0hyg022"]
 
 [ext_resource type="Texture2D" uid="uid://r3t46656x3pt" path="res://assets/Tilesets/Primavera/tileset.png" id="1_t12cc"]
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="2_1kuib"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://du8mq45tyuoxk" path="res://assets/Tilesets/Primavera/parallax/bg_cloud.png" id="9_uey51"]
 [ext_resource type="PackedScene" uid="uid://cwaxgwmv7utv5" path="res://Scenes/Perguntas/margem_perguntas.tscn" id="10_ttgkp"]
 [ext_resource type="AudioStream" uid="uid://ccg8n75kkl372" path="res://assets/Musics/Town - Reminiscence.ogg" id="11_vtpvr"]
+[ext_resource type="PackedScene" uid="uid://bwsuhyp013o5e" path="res://Scenes/Portal/portal.tscn" id="13_d6i4h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ahcg0"]
 texture = ExtResource("1_t12cc")
@@ -1608,7 +1609,7 @@ position = Vector2(0, -32)
 texture = ExtResource("9_uey51")
 centered = false
 
-[node name="Exclamacao" parent="." instance=ExtResource("4_1vji1")]
+[node name="Andar" parent="." instance=ExtResource("4_1vji1")]
 position = Vector2(451, 216)
 
 [node name="Exclamacao2" parent="." instance=ExtResource("4_1vji1")]
@@ -1659,3 +1660,9 @@ parameters/looping = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("SegmentShape2D_q0vpj")
+
+[node name="Portal" parent="." instance=ExtResource("13_d6i4h")]
+position = Vector2(483, 210)
+
+[connection signal="body_entered" from="Andar" to="Andar" method="_on_body_entered"]
+[connection signal="body_exited" from="Andar" to="Andar" method="_on_body_exited"]
