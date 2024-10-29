@@ -258,10 +258,6 @@ metadata/_edit_group_ = true
 sprite_frames = SubResource("SpriteFrames_mo784")
 animation = &"jump"
 autoplay = "idle"
-<<<<<<< Updated upstream
-=======
-frame_progress = 0.080988
->>>>>>> Stashed changes
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2.5)

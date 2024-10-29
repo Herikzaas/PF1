@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=24 format=4 uid="uid://cc04w5ffb3887"]
-=======
-[gd_scene load_steps=21 format=4 uid="uid://gjxuf2gddlca"]
->>>>>>> Stashed changes
+[gd_scene load_steps=24 format=4 uid="uid://bjeu3lgfdn4tf"]
 
 [ext_resource type="Texture2D" uid="uid://s5yq4eyu0jgg" path="res://assets/Tilesets/Assets_mundo_embaixodagua/Pixel-16px Underwater/tileset/tileset.png" id="1_1snqq"]
 [ext_resource type="Texture2D" uid="uid://cw48nwg75la1" path="res://assets/Tilesets/Assets_mundo_embaixodagua/Pixel-16px Underwater/parallax/parallax4.png" id="1_guef1"]

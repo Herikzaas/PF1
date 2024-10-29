@@ -29,19 +29,11 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("PuloRosa") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		
-<<<<<<< Updated upstream
 		
-=======
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_axis("ui_left", "ui_right")
->>>>>>> Stashed changes
 	if direction!=0:
 		velocity.x = direction * SPEED
 		animation(direction)
 		anim.scale.x = direction
-<<<<<<< Updated upstream
 	else :
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		animation(direction)
@@ -49,10 +41,6 @@ func _physics_process(delta):
 	if morto :
 		velocity.x = 0
 		anim.play('dead')
-=======
-		
-
->>>>>>> Stashed changes
 
 		
 	move_and_slide()
