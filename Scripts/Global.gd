@@ -1,3 +1,3 @@
 extends Node
 
-var p_visi = true
+var perg_usadas = []

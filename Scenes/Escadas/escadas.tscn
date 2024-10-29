@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scenes/Escadas/escadas.gd" id="1_iq8jy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kmwy1"]
-size = Vector2(32, 154)
+size = Vector2(32, 151)
 
 [node name="Escadas" type="Area2D"]
 position = Vector2(316, 266)

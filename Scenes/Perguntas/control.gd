@@ -4,6 +4,10 @@ var i = randi_range(1,35)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	while i in $"/root/Global".perg_usadas :
+		i = randi_range(1,35)
+	$"/root/Global".perg_usadas.append(i)
+
 	i = str(i)
 	i = "p"+i
 	print(i)

@@ -258,7 +258,7 @@
 				"r4":"a cacatua",
 				"correta" : "o peru"
 			},
-			"p33": {
+			"p32": {
 				"enunciado" : "Obra arquitetônica brasileira é uma das Sete Maravilhas do Mundo Moderno?",
 				"r1":"Elevador Lacerda",
 				"r2":"Cristo Redentor",
@@ -266,7 +266,7 @@
 				"r4":"One Tower",
 				"correta" : "Cristo Redentor"
 			},
-			"p34": {
+			"p33": {
 				"enunciado" : "Complete o provérbio “A cavalo dado …”",
 				"r1":"sai caro",
 				"r2":"tem medo de água fria",
@@ -274,7 +274,7 @@
 				"r4":"não se olha os dentes",
 				"correta" : "não se olha os dentes"
 			},
-			"p35": {
+			"p34": {
 				"enunciado" : "Quais as maiores pandemias da história?",
 				"r1":"Varíola e hipertensão",
 				"r2":"Gripe espanhola e câncer",

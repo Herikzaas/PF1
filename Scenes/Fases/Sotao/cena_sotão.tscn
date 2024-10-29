@@ -1815,7 +1815,7 @@ texture = ExtResource("2_aodk8")
 
 [sub_resource type="TileSet" id="TileSet_5tl60"]
 physics_layer_0/collision_layer = 1
-physics_layer_0/collision_mask = 2
+physics_layer_0/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_rsjqn")
 sources/4 = SubResource("TileSetAtlasSource_4f0m4")
 sources/11 = SubResource("TileSetAtlasSource_upy8e")
@@ -4549,16 +4549,16 @@ position = Vector2(32, 400)
 
 [node name="limiteesq" type="StaticBody2D" parent="."]
 disable_mode = 1
-collision_layer = 2
-collision_mask = 15
+collision_layer = 16
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="limiteesq"]
 shape = SubResource("SegmentShape2D_xvexo")
 
 [node name="BauCollision" type="Area2D" parent="."]
 position = Vector2(708, 233)
-collision_layer = 3
-collision_mask = 3
+collision_layer = 8
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BauCollision"]
 position = Vector2(11.5, 6.5)
@@ -4566,12 +4566,15 @@ shape = SubResource("RectangleShape2D_lh4f8")
 
 [node name="Escadas" parent="." instance=ExtResource("7_i26dp")]
 position = Vector2(304, 264)
+collision_layer = 32
+collision_mask = 2
 
 [node name="CollisionShape2D" parent="Escadas" index="0"]
-position = Vector2(16, 76)
+position = Vector2(16, 77.5)
 
 [node name="Exclamacao" parent="." instance=ExtResource("8_vfw83")]
-position = Vector2(720, 211)
+position = Vector2(720, 210)
+scale = Vector2(1.2, 1.2)
 
 [connection signal="body_entered" from="BauCollision" to="." method="_on_bau_collision_body_entered"]
 [connection signal="body_exited" from="Escadas" to="Escadas" method="_on_body_exited"]

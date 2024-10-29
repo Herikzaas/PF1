@@ -93,8 +93,12 @@ Descer_Escada={
 
 [layer_names]
 
-2d_physics/layer_1="Personagens"
-2d_physics/layer_2="Solo"
+2d_physics/layer_1="Solo"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Inimigo"
+2d_physics/layer_4="Icons"
+2d_physics/layer_5="Limites"
+2d_physics/layer_6="Escadas"
 
 [rendering]
 
