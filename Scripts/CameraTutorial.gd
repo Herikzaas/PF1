@@ -8,5 +8,3 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	self.position = (p1.position + p2.position)*0.5
-
-	#$"../MargemPerguntas".position.x = self.position.x - 20
