@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 
 func _on_andar_body_entered(body: Node2D) -> void:
 	if body.is_in_group('players'):
-		if perg.visible == true : 
+		#if perg.visible == true : 
 			controle = true
 			perg = perguntas.instantiate()
 			self.add_child(perg)

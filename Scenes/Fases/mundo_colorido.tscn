@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://bkqdvm0ekaf40"]
+[gd_scene load_steps=27 format=4 uid="uid://bx3dsorhu7ssy"]
 
 [ext_resource type="Texture2D" uid="uid://s5yq4eyu0jgg" path="res://assets/Tilesets/Assets_mundo_embaixodagua/Pixel-16px Underwater/tileset/tileset.png" id="1_1snqq"]
 [ext_resource type="Texture2D" uid="uid://cw48nwg75la1" path="res://assets/Tilesets/Assets_mundo_embaixodagua/Pixel-16px Underwater/parallax/parallax4.png" id="1_guef1"]
