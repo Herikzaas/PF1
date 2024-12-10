@@ -31,4 +31,5 @@ func _process(delta: float) -> void:
 	
 func confere(btn,i):
 	if btn.text == (StaticData.itemData['perguntas']["fase1"][i]["correta"]) :
+		$"/root/Global".perg_visible = false
 		queue_free()

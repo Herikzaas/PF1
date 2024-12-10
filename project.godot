@@ -99,6 +99,9 @@ Descer_Escada={
 2d_physics/layer_4="Icons"
 2d_physics/layer_5="Limites"
 2d_physics/layer_6="Escadas"
+2d_physics/layer_7="cristal_rosa"
+2d_physics/layer_8="cristal_azul"
+2d_physics/layer_9="Parede_fase"
 
 [rendering]
 
