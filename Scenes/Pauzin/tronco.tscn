@@ -3,17 +3,17 @@
 [ext_resource type="Texture2D" uid="uid://dl2de1cbqrob4" path="res://assets/Pauzin/TXVillageProps-ezgif.com-crop.png" id="1_mkj8c"]
 [ext_resource type="Script" path="res://Scenes/Pauzin/tronco.gd" id="1_pivn2"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ayx6l"]
-size = Vector2(9, 87)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_knwj3"]
+size = Vector2(7, 88)
 
-[node name="tronco_parede" type="Area2D"]
-collision_layer = 256
-collision_mask = 6
+[node name="Tronco_Porta" type="RigidBody2D"]
+gravity_scale = 0.0
 script = ExtResource("1_pivn2")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_mkj8c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.5, 0.5)
-shape = SubResource("RectangleShape2D_ayx6l")
+position = Vector2(-1.5, 0)
+shape = SubResource("RectangleShape2D_knwj3")
