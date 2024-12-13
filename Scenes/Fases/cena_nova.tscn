@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://poby8atjdyvi"]
+[gd_scene load_steps=22 format=4 uid="uid://cvqhgc6onpx3w"]
 
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="1_g807i"]
 [ext_resource type="Texture2D" uid="uid://dmu1ihgjg6u8x" path="res://assets/Tilesets/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="2_ur5h2"]
@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://8iul07vcltcc" path="res://assets/Tilesets/Kings and Pigs/Sprites/14-TileSets/Decorations (32x32).png" id="4_81val"]
 [ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/Players/Azul/player_azul.tscn" id="5_texl5"]
 [ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/Players/Rosa/player_rosa.tscn" id="6_nb4rd"]
-[ext_resource type="PackedScene" uid="uid://cwaxgwmv7utv5" path="res://Scenes/Perguntas/margem_perguntas.tscn" id="7_cmjk6"]
+[ext_resource type="PackedScene" path="res://Scenes/Perguntas/margem_perguntas.tscn" id="7_cmjk6"]
 [ext_resource type="PackedScene" uid="uid://ct1xsk746e3gg" path="res://Scenes/Cristais/cristal_rosa.tscn" id="8_k31tb"]
 [ext_resource type="PackedScene" uid="uid://bg11bx2yqbk1m" path="res://Scenes/Cristais/cristal_azul.tscn" id="9_24e7a"]
 [ext_resource type="PackedScene" uid="uid://bu68ye6lxweso" path="res://Scenes/Pauzin/tronco.tscn" id="10_k4vbq"]
