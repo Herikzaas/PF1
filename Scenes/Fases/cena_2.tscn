@@ -7000,4 +7000,5 @@ tile_map_data = PackedByteArray("AAAXAAsAAAARAAoAAAAXAAwAAAARAAsAAAAYAAsAAAARAAo
 tile_set = SubResource("TileSet_m8mul")
 
 [node name="PlayerAzul" parent="." instance=ExtResource("7_e5y7f")]
-position = Vector2(151, 329)
+position = Vector2(635, 210)
+floor_stop_on_slope = false

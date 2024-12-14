@@ -8,7 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if self.name == 'parede1_fase1' :
-		move_local_y(delta * 15)
+	if self.name == 'tronco_parede2' :
+		move_local_y(delta * 5)
 	if self.name == 'tronco_parede1' :
 		move_local_y(delta * -5)

@@ -11,7 +11,6 @@ func _ready() -> void:
 	i = str(i)
 	i = "p"+i
 	print(i)
-	$"/root/Global".velocidade = 0
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/PerguntaRosa.text = str(StaticData.itemData['perguntas']["fase1"][i]["enunciado"])
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp1.text = str(StaticData.itemData['perguntas']["fase1"][i]["r1"])
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp2.text = str(StaticData.itemData['perguntas']["fase1"][i]["r2"])
@@ -33,5 +32,4 @@ func _process(delta: float) -> void:
 func confere(btn,i):
 	if btn.text == (StaticData.itemData['perguntas']["fase1"][i]["correta"]) :
 		$"/root/Global".perg_visible = false
-		$"/root/Global".velocidade = 140
 		queue_free()
