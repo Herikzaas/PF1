@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://h1k4niqee6l1"]
 
 [ext_resource type="Script" path="res://Scripts/SplitScreen.gd" id="1_5l17n"]
-[ext_resource type="PackedScene" uid="uid://djk06e5uriyua" path="res://Scenes/Fases/Fase1/principal.tscn" id="2_0bvgw"]
+[ext_resource type="PackedScene" uid="uid://djk06e5uriyua" path="res://Scenes/Fases/FasesAntigas/Fase1/principal.tscn" id="2_0bvgw"]
 [ext_resource type="FontFile" uid="uid://diean77avqa47" path="res://fonts/FontePlayers/Planes_ValMore.ttf" id="3_n6pgv"]
 [ext_resource type="PackedScene" uid="uid://75pocnhmvxuu" path="res://Scenes/Perguntas/Database/perguntas.tscn" id="4_nmcic"]
 

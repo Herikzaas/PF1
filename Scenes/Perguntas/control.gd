@@ -11,6 +11,7 @@ func _ready() -> void:
 	i = str(i)
 	i = "p"+i
 	print(i)
+	$"/root/Global".certa = false
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/PerguntaRosa.text = str(StaticData.itemData['perguntas']["fase1"][i]["enunciado"])
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp1.text = str(StaticData.itemData['perguntas']["fase1"][i]["r1"])
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp2.text = str(StaticData.itemData['perguntas']["fase1"][i]["r2"])
@@ -30,6 +31,16 @@ func _process(delta: float) -> void:
 		confere($MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer4/resp4,i)
 	
 func confere(btn,i):
-	if btn.text == (StaticData.itemData['perguntas']["fase1"][i]["correta"]) :
+	if btn.text == (StaticData.itemData['perguntas']["fase1"][i]["correta"]):
 		$"/root/Global".perg_visible = false
+		$"/root/Global".certa = true
+		btn.modulate = "00913f"
+		$"/root/Global".acertos += 1
+		print($"/root/Global".acertos)
+		await get_tree().create_timer(0.8).timeout
 		queue_free()
+	else :
+		$"/root/Global".vidas -= 0.5
+		print($"/root/Global".vidas, "vidas")
+		btn.modulate = "ff0000"
+		#colocar o som e mudar a cor do botao

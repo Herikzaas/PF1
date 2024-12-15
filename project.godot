@@ -31,6 +31,8 @@ window/stretch/mode="canvas_items"
 
 folder_colors={
 "res://Scenes/": "orange",
+"res://Scenes/Fases/FasesAntigas/": "red",
+"res://Scenes/Fases/FasesAntigas/Fase1/": "red",
 "res://Scripts/": "yellow",
 "res://assets/": "pink",
 "res://fonts/": "purple"

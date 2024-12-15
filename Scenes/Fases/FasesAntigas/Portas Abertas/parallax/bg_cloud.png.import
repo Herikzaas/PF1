@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqgg0i62dklk"
-path="res://.godot/imported/bg.png-311a85ffedd8b60f3404313c2243947d.ctex"
+uid="uid://d1cw1piwrfu0l"
+path="res://.godot/imported/bg_cloud.png-28dd961a8faf759f25729f8886d07cd0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Fases/Portas Abertas/parallax/bg.png"
-dest_files=["res://.godot/imported/bg.png-311a85ffedd8b60f3404313c2243947d.ctex"]
+source_file="res://Scenes/Fases/FasesAntigas/Portas Abertas/parallax/bg_cloud.png"
+dest_files=["res://.godot/imported/bg_cloud.png-28dd961a8faf759f25729f8886d07cd0.ctex"]
 
 [params]
 

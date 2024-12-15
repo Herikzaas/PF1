@@ -1,7 +1,7 @@
 extends Control
 
 var perguntas = preload("res://Scenes/Perguntas/margem_perguntas.tscn")
-var next_scene = preload("res://Scenes/Fases/Portas Abertas/primavera.tscn")
+var next_scene = preload("res://Scenes/Fases/Fase1/Fase1.tscn")
 var n = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
