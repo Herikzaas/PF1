@@ -13,8 +13,8 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player_rosa") and $"/root/Global".perg_visible == false:
-		queue_free()
 		if $"/root/Global".perg_visible == false :
+			queue_free()
 			var perg = perguntas.instantiate()
 			get_tree().get_root().add_child(perg)
 			$"/root/Global".perg_visible = true

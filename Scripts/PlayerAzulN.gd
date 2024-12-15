@@ -38,7 +38,7 @@ func _physics_process(delta):
 	if morto :
 		velocity.x = 0
 		animation(direction)
-		
+	
 	move_and_slide()
 
 func animation(direction):

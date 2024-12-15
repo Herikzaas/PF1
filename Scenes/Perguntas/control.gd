@@ -12,6 +12,7 @@ func _ready() -> void:
 	i = "p"+i
 	print(i)
 	$"/root/Global".certa = false
+	
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/PerguntaRosa.text = str(StaticData.itemData['perguntas']["fase1"][i]["enunciado"])
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp1.text = str(StaticData.itemData['perguntas']["fase1"][i]["r1"])
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp2.text = str(StaticData.itemData['perguntas']["fase1"][i]["r2"])
@@ -21,17 +22,18 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("Btn_Resp1") and $MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa.visible == true :
-		confere($MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp1,i)
-	if Input.is_action_just_pressed("Btn_Resp2") and $MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa.visible == true :
-		confere($MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp2,i)
-	if Input.is_action_just_pressed("Btn_Resp3") and $MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa.visible == true :
-		confere($MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer4/resp3,i)
-	if Input.is_action_just_pressed("Btn_Resp4") and $MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa.visible == true :
-		confere($MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer4/resp4,i)
+	if $"/root/Global".perg_visible == true :
+		if Input.is_action_just_pressed("Btn_Resp1") and $MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa.visible == true :
+			confere($MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp1,i)
+		if Input.is_action_just_pressed("Btn_Resp2") and $MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa.visible == true :
+			confere($MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp2,i)
+		if Input.is_action_just_pressed("Btn_Resp3") and $MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa.visible == true :
+			confere($MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer4/resp3,i)
+		if Input.is_action_just_pressed("Btn_Resp4") and $MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa.visible == true :
+			confere($MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer4/resp4,i)
 	
 func confere(btn,i):
-	if btn.text == (StaticData.itemData['perguntas']["fase1"][i]["correta"]):
+	if btn.text == (StaticData.itemData['perguntas']["fase1"][i]["correta"]) and $"/root/Global".certa == false:
 		$"/root/Global".perg_visible = false
 		$"/root/Global".certa = true
 		btn.modulate = "00913f"
@@ -39,7 +41,7 @@ func confere(btn,i):
 		print($"/root/Global".acertos)
 		await get_tree().create_timer(0.8).timeout
 		queue_free()
-	else :
+	if btn.text != (StaticData.itemData['perguntas']["fase1"][i]["correta"]):
 		$"/root/Global".vidas -= 0.5
 		print($"/root/Global".vidas, "vidas")
 		btn.modulate = "ff0000"
