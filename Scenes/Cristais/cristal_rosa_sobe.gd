@@ -1,12 +1,15 @@
-extends Control
-
+extends Area2D
+var perguntas = preload("res://Scenes/Perguntas/margem_perguntas.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$"/root/Global".fase = 2
-	$"/root/Global".acertos = 0
-	$"/root/Global".num_questoes = 2
+	pass # Replace with function body.
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.

@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://ct1xsk746e3gg"]
+[gd_scene load_steps=4 format=3 uid="uid://dtrlvwet0e6q4"]
 
-[ext_resource type="Script" path="res://Scenes/Cristais/cristal_rosa.gd" id="1_8egb2"]
-[ext_resource type="Texture2D" uid="uid://cerx4828qdqfr" path="res://assets/Cristais/png/crystal_03_violet.png" id="2_k6vbb"]
+[ext_resource type="Script" path="res://Scenes/Cristais/cristal_rosa_sobe.gd" id="1_pxfrn"]
+[ext_resource type="Texture2D" uid="uid://cerx4828qdqfr" path="res://assets/Cristais/png/crystal_03_violet.png" id="2_sd5na"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dnvtq"]
 size = Vector2(7, 11)
@@ -10,10 +10,10 @@ size = Vector2(7, 11)
 scale = Vector2(1.5, 1.5)
 collision_layer = 64
 collision_mask = 2
-script = ExtResource("1_8egb2")
+script = ExtResource("1_pxfrn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_k6vbb")
+texture = ExtResource("2_sd5na")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 2.5)

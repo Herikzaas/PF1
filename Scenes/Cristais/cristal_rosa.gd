@@ -13,7 +13,6 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player_rosa") and $"/root/Global".perg_visible == false:
-		if $"/root/Global".perg_visible == false :
 			queue_free()
 			var perg = perguntas.instantiate()
 			get_tree().get_root().add_child(perg)
@@ -21,5 +20,6 @@ func _on_body_entered(body: Node2D) -> void:
 			fases()
 			
 func fases() -> void :
-	if $"/root/Global".fase == 1 :
-		$"/root/Global".liberar_parede = "ParedeRosaF1"
+	if $"/root/Global".fase == 1 or $"/root/Global".fase == 2:
+		if self.name == "cristal_rosaSOBE" : 
+			$"/root/Global".liberar_paredeR = "ParedeRosaF1"

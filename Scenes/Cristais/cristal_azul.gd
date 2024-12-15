@@ -22,4 +22,4 @@ func _on_body_entered(body: Node2D) -> void:
 			
 func fases() -> void :
 	if $"/root/Global".fase == 1 :
-		$"/root/Global".liberar_parede = "ParedeAzulF1"
+		$"/root/Global".liberar_paredeA = "ParedeAzulF1"

@@ -246,12 +246,12 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yjjkt"]
-size = Vector2(20, 27)
+size = Vector2(17, 27)
 
 [node name="PlayerAzul" type="CharacterBody2D" groups=["player_azul", "players"]]
 position = Vector2(256, 128)
 collision_layer = 2
-collision_mask = 445
+collision_mask = 447
 script = ExtResource("1_8nsek")
 metadata/_edit_group_ = true
 
@@ -261,7 +261,7 @@ animation = &"dead"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2.5)
+position = Vector2(-1.5, 2.5)
 shape = SubResource("RectangleShape2D_yjjkt")
 
 [connection signal="animation_finished" from="AnimAzul" to="." method="_on_anim_azul_animation_finished"]

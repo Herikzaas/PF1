@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bg11bx2yqbk1m"]
 
 [ext_resource type="Script" path="res://Scenes/Cristais/cristal_azul.gd" id="1_6btlk"]
-[ext_resource type="Texture2D" uid="uid://byflsmbmpuvjh" path="res://assets/Cristais/png/crystal_02_blue.png" id="1_tmbfw"]
+[ext_resource type="Texture2D" uid="uid://bcyxgffrdgv75" path="res://assets/Cristais/png/crystal_03_blue.png" id="2_lgqh7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yyxk7"]
 size = Vector2(8, 12)
@@ -13,7 +13,7 @@ collision_mask = 2
 script = ExtResource("1_6btlk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_tmbfw")
+texture = ExtResource("2_lgqh7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.666667, 2)

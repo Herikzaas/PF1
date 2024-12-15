@@ -246,12 +246,12 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wwibo"]
-size = Vector2(20, 27)
+size = Vector2(18, 27)
 
 [node name="PlayerRosa" type="CharacterBody2D" groups=["player_rosa", "players"]]
 position = Vector2(208, 128)
 collision_layer = 2
-collision_mask = 381
+collision_mask = 383
 script = ExtResource("1_8hvmp")
 metadata/_edit_group_ = true
 
@@ -261,7 +261,7 @@ animation = &"jump"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2.5)
+position = Vector2(-1, 2.5)
 shape = SubResource("RectangleShape2D_wwibo")
 
 [connection signal="animation_finished" from="AnimRosa" to="." method="_on_anim_rosa_animation_finished"]

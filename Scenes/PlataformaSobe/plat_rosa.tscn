@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2upbds3urobb"]
+
+[ext_resource type="Texture2D" uid="uid://dl2de1cbqrob4" path="res://assets/Pauzin/TXVillageProps-ezgif.com-crop.png" id="1_gcke3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njhy1"]
+size = Vector2(85, 7)
+
+[node name="PlatRosa" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_gcke3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1.5)
+shape = SubResource("RectangleShape2D_njhy1")

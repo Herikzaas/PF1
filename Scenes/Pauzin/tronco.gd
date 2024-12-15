@@ -12,14 +12,14 @@ func _process(delta: float) -> void:
 	
 
 func liberar(delta) -> void :
-	if $"/root/Global".liberar_parede == "ParedeAzulF1" :
+	if $"/root/Global".liberar_paredeA == "ParedeAzulF1" :
 		if self.name == "ParedeAzul" :
 			if $"/root/Global".certa == true :
 				move_local_y(delta*15)
 				await get_tree().create_timer(12).timeout
 				self.visible = false
 	
-	if $"/root/Global".liberar_parede == "ParedeRosaF1" :
+	if $"/root/Global".liberar_paredeR == "ParedeRosaF1" :
 		if self.name == "ParedeRosa" :
 			if $"/root/Global".certa == true :
 				move_local_y(delta*15)
