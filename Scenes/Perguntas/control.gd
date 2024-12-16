@@ -8,12 +8,9 @@ func _ready() -> void:
 	while i in $"/root/Global".perg_usadas :
 		i = randi_range(1,35)
 	$"/root/Global".perg_usadas.append(i)
-
 	i = str(i)
 	i = "p"+i
 	print(i)
-	
-	
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/PerguntaRosa.text = str(StaticData.itemData['perguntas']["fase1"][i]["enunciado"])
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp1.text = str(StaticData.itemData['perguntas']["fase1"][i]["r1"])
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp2.text = str(StaticData.itemData['perguntas']["fase1"][i]["r2"])
@@ -35,17 +32,12 @@ func _process(delta: float) -> void:
 	
 func confere(btn,i):
 	if btn.text == (StaticData.itemData['perguntas']["fase1"][i]["correta"]):
-		if $"/root/Global".certa == false :
 			btn.modulate = "00913f"
-			print($"/root/Global".acertos)
 			$"/root/Global".certa = true
-			await get_tree().create_timer(0.8).timeout
 			$"/root/Global".perg_visible = false
 			$"/root/Global".acertos += 1
+			await get_tree().create_timer(0.5).timeout
 			queue_free()
-	if btn.text != (StaticData.itemData['perguntas']["fase1"][i]["correta"]):
-		$"/root/Global".vidas -= 0.5
-		print($"/root/Global".vidas, "vidas")
-		btn.modulate = "ff0000"
-		$"/root/Global".certa = false
-		#colocar o som e mudar a cor do botao
+	if btn.text != (StaticData.itemData['perguntas']["fase1"][i]["correta"]) and $"/root/Global".certa == false:
+		$"/root/Global".vidas -= 1
+		print($"/root/Global".vidas,"vidas")

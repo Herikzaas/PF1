@@ -7013,9 +7013,6 @@ tile_set = SubResource("TileSet_d1e7l")
 tile_map_data = PackedByteArray("AAAXAAsAAAARAAoAAAAXAAwAAAARAAsAAAAYAAsAAAARAAoAAAAYAAwAAAARAAsAAAA=")
 tile_set = SubResource("TileSet_m8mul")
 
-[node name="Porta" parent="." instance=ExtResource("11_13afl")]
-position = Vector2(785, 181)
-
 [node name="PlayerAzul" parent="." instance=ExtResource("8_5yefg")]
 position = Vector2(121, 393)
 floor_stop_on_slope = false
@@ -7028,3 +7025,6 @@ position = Vector2(281, 276)
 
 [node name="cristal_rosaPlataforma" parent="." instance=ExtResource("10_73158")]
 position = Vector2(464, 243)
+
+[node name="Porta" parent="." instance=ExtResource("11_13afl")]
+position = Vector2(785, 180)
