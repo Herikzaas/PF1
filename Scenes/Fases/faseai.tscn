@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://bp75wjhi74wr"]
+[gd_scene load_steps=16 format=4 uid="uid://c1stno7v86384"]
 
 [ext_resource type="Texture2D" uid="uid://lhy70dgss568" path="res://assets/Tilesets/Dungeon Tile Set/Dungeon Tile Set.png" id="1_nkrjg"]
 [ext_resource type="Texture2D" uid="uid://d3r7cijg1ws6w" path="res://assets/Tilesets/CandyPlatformerTiles/CandyPlatformerTiles/CandyItems.png" id="2_jwlj4"]

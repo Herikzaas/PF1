@@ -13,6 +13,7 @@ func _process(delta: float) -> void:
 	if $"/root/Global".acertos >= $"/root/Global".num_questoes :
 		if aberta == false :
 			anim.play("open")
+			$Audio.play()
 			aberta = true
 	$cont.text =  str($"/root/Global".acertos) + "/" + str($"/root/Global".num_questoes)
 

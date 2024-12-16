@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://die0ercty8yag"]
+[gd_scene load_steps=18 format=3 uid="uid://die0ercty8yag"]
 
 [ext_resource type="Texture2D" uid="uid://el0e425dec67" path="res://assets/Tilesets/Kings and Pigs/Sprites/11-Door/Closiong (46x56).png" id="1_boh88"]
 [ext_resource type="Script" path="res://Scenes/Porta/porta.gd" id="1_gxlov"]
 [ext_resource type="Texture2D" uid="uid://c3sd2ox8vde6" path="res://assets/Tilesets/Kings and Pigs/Sprites/11-Door/Idle.png" id="2_2bp38"]
 [ext_resource type="Texture2D" uid="uid://qgi5op36dl64" path="res://assets/Tilesets/Kings and Pigs/Sprites/11-Door/Opening (46x56).png" id="3_bcthj"]
 [ext_resource type="FontFile" uid="uid://diean77avqa47" path="res://fonts/FontePlayers/Planes_ValMore.ttf" id="5_5t7h1"]
+[ext_resource type="AudioStream" uid="uid://d1uff4rej1jl7" path="res://sounds/porta.wav" id="6_dxopm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f8gd3"]
 atlas = ExtResource("1_boh88")
@@ -111,5 +112,8 @@ size_flags_horizontal = 4
 theme_override_fonts/normal_font = ExtResource("5_5t7h1")
 fit_content = true
 scroll_active = false
+
+[node name="Audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_dxopm")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
