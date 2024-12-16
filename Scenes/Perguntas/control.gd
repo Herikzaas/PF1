@@ -47,4 +47,5 @@ func confere(btn,i):
 		$"/root/Global".vidas -= 0.5
 		print($"/root/Global".vidas, "vidas")
 		btn.modulate = "ff0000"
+		$"/root/Global".certa = false
 		#colocar o som e mudar a cor do botao
