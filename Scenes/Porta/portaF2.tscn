@@ -1,0 +1,120 @@
+[gd_scene load_steps=18 format=3 uid="uid://c1oodjg2bjtsd"]
+
+[ext_resource type="Script" path="res://Scenes/Porta/porta.gd" id="1_u7u5g"]
+[ext_resource type="Texture2D" uid="uid://el0e425dec67" path="res://assets/Tilesets/Kings and Pigs/Sprites/11-Door/Closiong (46x56).png" id="2_0cgwa"]
+[ext_resource type="Texture2D" uid="uid://c3sd2ox8vde6" path="res://assets/Tilesets/Kings and Pigs/Sprites/11-Door/Idle.png" id="3_mnjtn"]
+[ext_resource type="Texture2D" uid="uid://qgi5op36dl64" path="res://assets/Tilesets/Kings and Pigs/Sprites/11-Door/Opening (46x56).png" id="4_xirp6"]
+[ext_resource type="FontFile" uid="uid://diean77avqa47" path="res://fonts/FontePlayers/Planes_ValMore.ttf" id="5_o5cei"]
+[ext_resource type="AudioStream" uid="uid://d1uff4rej1jl7" path="res://sounds/porta.wav" id="6_sqj7j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8gd3"]
+atlas = ExtResource("2_0cgwa")
+region = Rect2(0, 0, 46, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwhlx"]
+atlas = ExtResource("2_0cgwa")
+region = Rect2(46, 0, 46, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_56qtl"]
+atlas = ExtResource("2_0cgwa")
+region = Rect2(92, 0, 46, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bieo5"]
+atlas = ExtResource("3_mnjtn")
+region = Rect2(0, 0, 46, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_niqdd"]
+atlas = ExtResource("4_xirp6")
+region = Rect2(0, 0, 46, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bra7i"]
+atlas = ExtResource("4_xirp6")
+region = Rect2(46, 0, 46, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b0jk0"]
+atlas = ExtResource("4_xirp6")
+region = Rect2(92, 0, 46, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hm6t7"]
+atlas = ExtResource("4_xirp6")
+region = Rect2(138, 0, 46, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eo06o"]
+atlas = ExtResource("4_xirp6")
+region = Rect2(184, 0, 46, 56)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v0v6o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8gd3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwhlx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_56qtl")
+}],
+"loop": false,
+"name": &"close",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bieo5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_niqdd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bra7i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b0jk0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hm6t7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eo06o")
+}],
+"loop": false,
+"name": &"open",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kblee"]
+size = Vector2(46, 56)
+
+[node name="Porta" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_u7u5g")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_v0v6o")
+animation = &"open"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_kblee")
+
+[node name="cont" type="RichTextLabel" parent="."]
+layout_direction = 1
+offset_left = -8.0
+offset_top = -48.0
+offset_right = 24.0
+offset_bottom = -32.0
+size_flags_horizontal = 4
+theme_override_fonts/normal_font = ExtResource("5_o5cei")
+fit_content = true
+scroll_active = false
+
+[node name="Audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_sqj7j")
+volume_db = -3.811
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
