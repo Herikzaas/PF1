@@ -1730,7 +1730,7 @@ sources/0 = SubResource("TileSetAtlasSource_3f8n0")
 sources/1 = SubResource("TileSetAtlasSource_4w4rt")
 sources/2 = SubResource("TileSetAtlasSource_1kkoh")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5pjcy"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aguu4"]
 texture = ExtResource("2_osqeu")
 0:0/0 = 0
 1:0/0 = 0
@@ -1798,7 +1798,7 @@ texture = ExtResource("2_osqeu")
 7:7/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_6g2tt"]
-sources/0 = SubResource("TileSetAtlasSource_5pjcy")
+sources/0 = SubResource("TileSetAtlasSource_aguu4")
 
 [node name="Control" type="Control"]
 layout_mode = 3
