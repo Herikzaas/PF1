@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://canfbgo34fdej"]
+[gd_scene load_steps=26 format=4 uid="uid://canfbgo34fdej"]
 
 [ext_resource type="Script" path="res://Scenes/Fases/Fase1/fase_1.gd" id="1_3hukp"]
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="2_yjakj"]
@@ -14,8 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://bppw14ulettab" path="res://Scenes/Escadas/escadas.tscn" id="12_70slv"]
 [ext_resource type="PackedScene" uid="uid://die0ercty8yag" path="res://Scenes/Porta/porta.tscn" id="13_wftwj"]
 [ext_resource type="AudioStream" uid="uid://ulu0elw7g5su" path="res://sounds/musicaF1.mp3" id="14_yoavh"]
-[ext_resource type="Texture2D" uid="uid://byu27kfak8xaf" path="res://assets/Icons/j.png" id="15_do3hq"]
-[ext_resource type="Script" path="res://Scenes/Reiniciar/button.gd" id="16_qf72c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cekyn"]
 texture = ExtResource("2_yjakj")
@@ -5081,7 +5079,7 @@ position = Vector2(135, 405)
 [node name="cristal_azul" parent="Gemas" instance=ExtResource("8_df62n")]
 position = Vector2(352, 180)
 
-[node name="Porta" parent="." instance=ExtResource("13_wftwj")]
+[node name="PortaF1" parent="." instance=ExtResource("13_wftwj")]
 position = Vector2(531, 245)
 
 [node name="PlayerAzul" parent="." instance=ExtResource("9_e1qdv")]
@@ -5107,14 +5105,3 @@ scale = Vector2(1, 0.6)
 [node name="Musica" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("14_yoavh")
 volume_db = -16.838
-
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 770.0
-offset_top = 21.0
-offset_right = 812.0
-offset_bottom = 65.0
-icon = ExtResource("15_do3hq")
-script = ExtResource("16_qf72c")
-
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

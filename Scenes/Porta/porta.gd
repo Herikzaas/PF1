@@ -19,7 +19,9 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if aberta == true and body.is_in_group('players') :
-		get_tree().change_scene_to_packed(fase2)
-		queue_free()
-			#if $"/root/Global".fase == 2 :
-				#get_tree().change_scene_to_packed(fase3)
+		if self.name == "PortaF1" :
+			$"/root/TransitionScreen".transition()
+			await $"/root/TransitionScreen".on_transition_finished
+			get_tree().change_scene_to_packed(fase2)
+		if self.name == "PortaF2" :
+			get_tree().change_scene_to_packed(fase3)
