@@ -34,12 +34,12 @@ func _process(delta: float) -> void:
 	
 func confere(btn,i):
 	if btn.text == (StaticData.itemData['perguntas']["fase1"][i]["correta"]) and $"/root/Global".certa == false:
-		$"/root/Global".perg_visible = false
-		$"/root/Global".certa = true
 		btn.modulate = "00913f"
 		$"/root/Global".acertos += 1
 		print($"/root/Global".acertos)
 		await get_tree().create_timer(0.8).timeout
+		$"/root/Global".perg_visible = false
+		$"/root/Global".certa = true
 		queue_free()
 	if btn.text != (StaticData.itemData['perguntas']["fase1"][i]["correta"]):
 		$"/root/Global".vidas -= 0.5

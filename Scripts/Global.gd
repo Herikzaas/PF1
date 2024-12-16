@@ -9,3 +9,5 @@ var certa = false
 var vidas = 3
 var acertos = 0
 var num_questoes 
+var liberar_platR
+var plataforma 
