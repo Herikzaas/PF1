@@ -6,7 +6,8 @@ func _ready() -> void:
 	$"/root/Global".fase = 2
 	$"/root/Global".acertos = 0
 	$"/root/Global".num_questoes = 2
-
+	$"/root/Global".liberar_paredeR = ""
+	$"/root/Global".liberar_paredeA = ""
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

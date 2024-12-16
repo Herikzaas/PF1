@@ -1,14 +1,14 @@
 [gd_scene load_steps=17 format=4 uid="uid://bslmcnw6rmw0u"]
 
-[ext_resource type="Texture2D" uid="uid://dmu1ihgjg6u8x" path="res://assets/Tilesets/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_30fiy"]
-[ext_resource type="Texture2D" uid="uid://dl2de1cbqrob4" path="res://assets/Pauzin/TXVillageProps-ezgif.com-crop.png" id="2_3v0o0"]
-[ext_resource type="Texture2D" uid="uid://cpa6iwjcbi0mb" path="res://assets/Cristais/png/crystal_02_violet.png" id="3_w4iwr"]
-[ext_resource type="Texture2D" uid="uid://byflsmbmpuvjh" path="res://assets/Cristais/png/crystal_02_blue.png" id="4_p8iv4"]
-[ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/Players/Azul/player_azul.tscn" id="5_h0vxu"]
-[ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/Players/Rosa/player_rosa.tscn" id="6_j1x20"]
+[ext_resource type="Texture2D" uid="uid://dmu1ihgjg6u8x" path="res://assets/Tilesets/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_l020r"]
+[ext_resource type="Texture2D" uid="uid://dl2de1cbqrob4" path="res://assets/Pauzin/TXVillageProps-ezgif.com-crop.png" id="2_ccqig"]
+[ext_resource type="Texture2D" uid="uid://cpa6iwjcbi0mb" path="res://assets/Cristais/png/crystal_02_violet.png" id="3_0dyde"]
+[ext_resource type="Texture2D" uid="uid://byflsmbmpuvjh" path="res://assets/Cristais/png/crystal_02_blue.png" id="4_rsprs"]
+[ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/Players/Azul/player_azul.tscn" id="5_4dq08"]
+[ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/Players/Rosa/player_rosa.tscn" id="6_prr53"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nlcis"]
-texture = ExtResource("1_30fiy")
+texture = ExtResource("1_l020r")
 2:2/0 = 0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:2/0 = 0
@@ -764,7 +764,7 @@ physics_layer_0/collision_mask = 2
 sources/0 = SubResource("TileSetAtlasSource_nlcis")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ols2m"]
-texture = ExtResource("1_30fiy")
+texture = ExtResource("1_l020r")
 2:2/0 = 0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:2/0 = 0
@@ -1524,7 +1524,7 @@ physics_layer_0/collision_mask = 2
 sources/0 = SubResource("TileSetAtlasSource_ols2m")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2wjsa"]
-texture = ExtResource("2_3v0o0")
+texture = ExtResource("2_ccqig")
 0:0/0 = 0
 0:1/0 = 0
 0:2/0 = 0
@@ -1535,15 +1535,15 @@ texture = ExtResource("2_3v0o0")
 sources/0 = SubResource("TileSetAtlasSource_2wjsa")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2kcrx"]
-texture = ExtResource("3_w4iwr")
+texture = ExtResource("3_0dyde")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_77dee"]
-texture = ExtResource("4_p8iv4")
+texture = ExtResource("4_rsprs")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dmhqj"]
-texture = ExtResource("2_3v0o0")
+texture = ExtResource("2_ccqig")
 0:0/0 = 0
 0:1/0 = 0
 0:2/0 = 0
@@ -1580,8 +1580,8 @@ tile_set = SubResource("TileSet_niepe")
 tile_map_data = PackedByteArray("AAAFABcAAAAAAAAAAAAmAA4AAAAAAAAAAAATAAwAAQAAAAAAAAAOABcAAgAAAAAAAAAOABgAAgAAAAEAAAAOABkAAgAAAAIAAAAZABcAAgAAAAAAAAAZABgAAgAAAAEAAAAZABkAAgAAAAIAAAA=")
 tile_set = SubResource("TileSet_0ukj8")
 
-[node name="PlayerAzul" parent="." instance=ExtResource("5_h0vxu")]
+[node name="PlayerAzul" parent="." instance=ExtResource("5_4dq08")]
 position = Vector2(104, 124)
 
-[node name="PlayerRosa" parent="." instance=ExtResource("6_j1x20")]
+[node name="PlayerRosa" parent="." instance=ExtResource("6_prr53")]
 position = Vector2(38, 366)

@@ -1,16 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2upbds3urobb"]
+[gd_scene load_steps=4 format=3 uid="uid://d2upbds3urobb"]
 
 [ext_resource type="Texture2D" uid="uid://dl2de1cbqrob4" path="res://assets/Pauzin/TXVillageProps-ezgif.com-crop.png" id="1_gcke3"]
+[ext_resource type="Script" path="res://Scenes/PlataformaSobe/plat_rosa.gd" id="1_h882b"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_njhy1"]
-size = Vector2(85, 7)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l4g6s"]
+size = Vector2(96, 8)
 
-[node name="PlatRosa" type="StaticBody2D"]
+[node name="Plataforma_Sobe" type="Node2D"]
+script = ExtResource("1_h882b")
+move_horizontal = false
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="platform" type="AnimatableBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="platform"]
+position = Vector2(0.160475, 7.01458e-09)
 rotation = 1.5708
+scale = Vector2(1, 1.08987)
 texture = ExtResource("1_gcke3")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -1.5)
-shape = SubResource("RectangleShape2D_njhy1")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform"]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_l4g6s")
