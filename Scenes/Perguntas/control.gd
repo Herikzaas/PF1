@@ -4,6 +4,7 @@ var i = randi_range(1,35)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$"/root/Global".certa = false
 	while i in $"/root/Global".perg_usadas :
 		i = randi_range(1,35)
 	$"/root/Global".perg_usadas.append(i)
@@ -11,7 +12,7 @@ func _ready() -> void:
 	i = str(i)
 	i = "p"+i
 	print(i)
-	$"/root/Global".certa = false
+	
 	
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/PerguntaRosa.text = str(StaticData.itemData['perguntas']["fase1"][i]["enunciado"])
 	$MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer3/resp1.text = str(StaticData.itemData['perguntas']["fase1"][i]["r1"])
@@ -33,14 +34,15 @@ func _process(delta: float) -> void:
 			confere($MarginContainer/HBoxContainer/MarginContainer/Holder_Rosa/HBoxContainer4/resp4,i)
 	
 func confere(btn,i):
-	if btn.text == (StaticData.itemData['perguntas']["fase1"][i]["correta"]) and $"/root/Global".certa == false:
-		btn.modulate = "00913f"
-		$"/root/Global".acertos += 1
-		print($"/root/Global".acertos)
-		await get_tree().create_timer(0.8).timeout
-		$"/root/Global".perg_visible = false
-		$"/root/Global".certa = true
-		queue_free()
+	if btn.text == (StaticData.itemData['perguntas']["fase1"][i]["correta"]):
+		if $"/root/Global".certa == false :
+			btn.modulate = "00913f"
+			print($"/root/Global".acertos)
+			$"/root/Global".certa = true
+			await get_tree().create_timer(0.8).timeout
+			$"/root/Global".perg_visible = false
+			$"/root/Global".acertos += 1
+			queue_free()
 	if btn.text != (StaticData.itemData['perguntas']["fase1"][i]["correta"]):
 		$"/root/Global".vidas -= 0.5
 		print($"/root/Global".vidas, "vidas")

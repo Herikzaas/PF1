@@ -6,6 +6,7 @@ func _ready() -> void:
 	$"/root/Global".fase = 1 
 	$"/root/Global".acertos = 0
 	$"/root/Global".num_questoes = 2
+	$Musica.play()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

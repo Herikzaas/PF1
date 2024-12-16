@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://canfbgo34fdej"]
+[gd_scene load_steps=26 format=4 uid="uid://canfbgo34fdej"]
 
 [ext_resource type="Script" path="res://Scenes/Fases/Fase1/fase_1.gd" id="1_3hukp"]
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="2_yjakj"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cwaxgwmv7utv5" path="res://Scenes/Perguntas/margem_perguntas.tscn" id="11_nlvfq"]
 [ext_resource type="PackedScene" uid="uid://bppw14ulettab" path="res://Scenes/Escadas/escadas.tscn" id="12_70slv"]
 [ext_resource type="PackedScene" uid="uid://die0ercty8yag" path="res://Scenes/Porta/porta.tscn" id="13_wftwj"]
+[ext_resource type="AudioStream" uid="uid://ulu0elw7g5su" path="res://sounds/musicaF1.mp3" id="14_yoavh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cekyn"]
 texture = ExtResource("2_yjakj")
@@ -5100,3 +5101,7 @@ offset_bottom = 5.0
 [node name="Escadas" parent="." instance=ExtResource("12_70slv")]
 position = Vector2(752, 329)
 scale = Vector2(1, 0.6)
+
+[node name="Musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_yoavh")
+volume_db = -16.838

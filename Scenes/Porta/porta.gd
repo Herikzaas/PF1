@@ -10,7 +10,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if $"/root/Global".acertos >= $"/root/Global".num_questoes :
+	if $"/root/Global".acertos == $"/root/Global".num_questoes :
 		if aberta == false :
 			anim.play("open")
 			$Audio.play()

@@ -115,5 +115,6 @@ scroll_active = false
 
 [node name="Audio" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_dxopm")
+volume_db = -3.811
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
