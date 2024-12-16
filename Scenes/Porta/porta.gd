@@ -2,7 +2,7 @@ extends Area2D
 var aberta = false
 @onready var anim = $AnimatedSprite2D as AnimatedSprite2D
 var fase2 = preload("res://Scenes/Fases/Fase2/Fase2.tscn")
-var fase3 = preload("res://Scenes/Fases/fase_3.tscn")
+var fase3 = preload("res://Scenes/Fases/Fase3/fase_3.tscn")
 
 func _ready() -> void:
 	aberta = false
