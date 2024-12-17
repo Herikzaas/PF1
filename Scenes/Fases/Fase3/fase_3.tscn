@@ -3071,5 +3071,5 @@ position = Vector2(246, 396)
 scale = Vector2(1.5, 1.5)
 
 [node name="PorcoNormal2" parent="." instance=ExtResource("12_hwlcu")]
-position = Vector2(389, 397)
-scale = Vector2(1.5, 1.5)
+position = Vector2(396, 395)
+scale = Vector2(-1.5, 1.5)
