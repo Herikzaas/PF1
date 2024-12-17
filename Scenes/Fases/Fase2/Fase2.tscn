@@ -7013,18 +7013,18 @@ tile_set = SubResource("TileSet_d1e7l")
 tile_map_data = PackedByteArray("AAAXAAsAAAARAAoAAAAXAAwAAAARAAsAAAAYAAsAAAARAAoAAAAYAAwAAAARAAsAAAA=")
 tile_set = SubResource("TileSet_m8mul")
 
+[node name="PortaF2" parent="." instance=ExtResource("11_13afl")]
+position = Vector2(782, 181)
+
 [node name="PlayerAzul" parent="." instance=ExtResource("8_5yefg")]
 position = Vector2(121, 393)
 floor_stop_on_slope = false
 
 [node name="PlayerRosa" parent="." instance=ExtResource("9_xmm7a")]
-position = Vector2(160, 394)
+position = Vector2(166, 394)
 
 [node name="cristal_rosaParede" parent="." instance=ExtResource("10_73158")]
 position = Vector2(281, 276)
 
 [node name="cristal_rosaPlataforma" parent="." instance=ExtResource("10_73158")]
 position = Vector2(464, 243)
-
-[node name="PortaF2" parent="." instance=ExtResource("11_13afl")]
-position = Vector2(782, 181)

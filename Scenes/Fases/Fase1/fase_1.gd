@@ -7,6 +7,7 @@ func _ready() -> void:
 	$"/root/Global".acertos = 0
 	$"/root/Global".num_questoes = 2
 	$Musica.play()
+	$"/root/Global".fase_pre = preload("res://Scenes/Fases/Fase2/Fase2.tscn")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
