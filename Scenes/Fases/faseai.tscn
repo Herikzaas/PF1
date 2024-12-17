@@ -2208,14 +2208,14 @@ tile_set = SubResource("TileSet_31ryt")
 
 [node name="TileMapLayerPERGUNTAS" type="TileMapLayer" parent="."]
 position = Vector2(-23, -40)
-tile_map_data = PackedByteArray("AAAoABAAAAACAAMAAAANAAYAAAABAAMAAAAiAAUAAAACAAMAAAAIAAsAAAABAAMAAAA=")
+tile_map_data = PackedByteArray("AAAoABAAAAACAAMAAAAiAAUAAAACAAMAAAAIAAsAAAABAAMAAAAMAAYAAAABAAMAAAA=")
 tile_set = SubResource("TileSet_72j6p")
 
 [node name="PlayerAzul" parent="." instance=ExtResource("5_7vgm7")]
-position = Vector2(634, 231)
+position = Vector2(37, 391)
 
 [node name="PlayerRosa" parent="." groups=["Rosa"] instance=ExtResource("6_a6lwn")]
-position = Vector2(745, 225)
+position = Vector2(71, 391)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_as46k")
