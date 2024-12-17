@@ -7026,5 +7026,5 @@ position = Vector2(281, 276)
 [node name="cristal_rosaPlataforma" parent="." instance=ExtResource("10_73158")]
 position = Vector2(464, 243)
 
-[node name="Porta" parent="." instance=ExtResource("11_13afl")]
+[node name="PortaF2" parent="." instance=ExtResource("11_13afl")]
 position = Vector2(782, 181)

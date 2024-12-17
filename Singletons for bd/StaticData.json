@@ -290,9 +290,15 @@
 				"r4":"Digestar alimentos",
 				"correta" : "Bombear sangue para o corpo"
 			},
-		"teste" : {
-			"id" : 1,
-			"cost" : 15
+		"fase2" : {
+				"p35": {
+				"enunciado" : "Qual a função do coração?",
+				"r1":"Bombear sangue para o corpo",
+				"r2":"Produzir saliva",
+				"r3":"Controlar a temperatura do corpo",
+				"r4":"Digestar alimentos",
+				"correta" : "Bombear sangue para o corpo"
+			},
 	}
   }
 }
