@@ -300,6 +300,7 @@
 				"correta" : "Bombear sangue para o corpo"
 			},
 				"p2": {
+<<<<<<< HEAD
 				"enunciado" : "Um bebê nasce com cerca de … ossos a mais do que um adulto!",
 				"r1":"5",
 				"r2":"94",
@@ -323,6 +324,16 @@
 				"r4":"7 litros",
 				"correta" : "entre 4 a 6 litros"
 			},
+=======
+				"enunciado" : "Qual a função do coração?",
+				"r1":"Bombear sangue para o corpo",
+				"r2":"Produzir saliva",
+				"r3":"Controlar a temperatura do corpo",
+				"r4":"Digestar alimentos",
+				"correta" : "Bombear sangue para o corpo"
+			},
+
+>>>>>>> 1e576481af01131c00d2b988f3d90d2fbac6d523
 	}
   }
 }
