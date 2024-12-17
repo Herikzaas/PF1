@@ -59,4 +59,6 @@ func animation(direction):
 		
 func _on_anim_azul_animation_finished() -> void:
 	if anim.animation == 'dead' :
-		queue_free()
+		$"/root/TransitionScreen".transition()
+		await $"/root/TransitionScreen".on_transition_finished
+		get_tree().change_scene_to_packed($"/root/Global".reinicia_fase)

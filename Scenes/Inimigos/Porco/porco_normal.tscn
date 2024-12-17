@@ -204,6 +204,7 @@ collision_mask = 2
 target_position = Vector2(-12, 0)
 
 [node name="colide_player" parent="." instance=ExtResource("5_inbl2")]
+position = Vector2(-1, 5)
 collision_layer = 4
 collision_mask = 3
 

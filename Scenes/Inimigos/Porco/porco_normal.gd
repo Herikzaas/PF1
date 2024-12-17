@@ -12,6 +12,9 @@ func _ready() -> void:
 		direction = -1
 	else :
 		direction = 1
+	if $"/root/Global".fase == 4 :
+		global_position.x = 788
+		global_position.y = 204
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -23,7 +26,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
 	if $CorrePlayer.is_colliding():
-		SPEED = 150
+		SPEED = 175
 		animacao.play("run")
 	if $TrocaDirecao.is_colliding():
 		direction *= -1

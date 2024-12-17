@@ -19,7 +19,11 @@ func liberar(delta) -> void :
 				move_local_y(delta*15)
 				await get_tree().create_timer(12).timeout
 				self.visible = false
-	
+		if self.name == "ParedeAzulSobe":
+			if $"/root/Global".certa == true :
+				move_local_y(delta*-15)
+				await get_tree().create_timer(12).timeout
+				self.visible = false
 	if $"/root/Global".liberar_paredeR == "ParedeRosaF1" :
 		if self.name == "ParedeRosa" :
 			if $"/root/Global".certa == true :

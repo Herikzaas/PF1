@@ -1,6 +1,7 @@
 extends Node
 
 var perg_usadas = []
+var perg_fase2 = []
 var perg_visible = false
 var liberar_paredeR
 var liberar_paredeA 

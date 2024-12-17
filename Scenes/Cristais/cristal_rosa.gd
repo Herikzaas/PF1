@@ -20,7 +20,7 @@ func _on_body_entered(body: Node2D) -> void:
 			fases()
 			
 func fases() -> void :
-	if $"/root/Global".fase <= 5:
+	if $"/root/Global".fase <= 10:
 		if self.name == "cristal_rosaParede" : 
 			$"/root/Global".liberar_paredeR = "ParedeRosaF1"
 		if self.name == "cristal_rosaPlataforma" :

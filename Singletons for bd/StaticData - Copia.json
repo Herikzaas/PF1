@@ -114,12 +114,12 @@
 				"correta" : "Novembro"
 			},
 			"p15": {
-				"enunciado" : "Quem proclamou a Independência do Brasil?",
-				"r1":"Dom Pedro II",
-				"r2":"Pedro Álvares de Cabral",
-				"r3":"Dom Pedro I",
-				"r4":"Getúlio Vargas",
-				"correta" : "Dom Pedro I"
+				"enunciado" : "Qual o mês que vem depois de outubro?",
+				"r1":"Setembro",
+				"r2":"Novembro",
+				"r3":"Agosto",
+				"r4":"Dezembro",
+				"correta" : "Novembro"
 			},
 			"p16": {
 				"enunciado" : "Qual parte da planta é responsável pela respiração?",
@@ -128,14 +128,6 @@
 				"r3":"Flor",
 				"r4":"Raiz",
 				"correta" : "Folha"
-			},
-			"p17": {
-				"enunciado" : "Qual país dominava o Brasil antes da Independência?",
-				"r1":"Espanha",
-				"r2":"Itália",
-				"r3":"Portugal",
-				"r4":"Estados Unidos",
-				"correta" : "Portugal"
 			},
 			"p17": {
 				"enunciado" : "Quantos anos tem um século? ",
@@ -170,12 +162,12 @@
 				"correta" : "10 centenas"
 			},
 			"p21": {
-				"enunciado" : "Em qual história a princesa joga suas tranças para o príncipe?",
-				"r1":"Cinderela",
-				"r2":"Rapunzel",
-				"r3":"Branca de Neve",
-				"r4":"Bela Adormecida",
-				"correta" : "Rapunzel"
+				"enunciado" : "Qual a cor da lixeira onde devem ser colocados os papéis?",
+				"r1":"Azul",
+				"r2":"Verde",
+				"r3":"Amarelo",
+				"r4":"Vermelho",
+				"correta" : "Verde"
 			},
 			"p22": {
 				"enunciado" : "Tipo sanguíneo considerado doador universal",
@@ -292,125 +284,22 @@
 			},
 		"fase2" : {
 				"p1": {
-				"enunciado" : "Quantos centímetros tem 1 metro?",
-				"r1":"10 centímetros",
-				"r2":"100 centímetros",
-				"r3":"1000 centímetros",
-				"r4":"10000 centímetros",
-				"correta" : "100 centímetros"
+				"enunciado" : "Qual a função do coração?",
+				"r1":"Bombear sangue para o corpo",
+				"r2":"Produzir saliva",
+				"r3":"Controlar a temperatura do corpo",
+				"r4":"Digestar alimentos",
+				"correta" : "Bombear sangue para o corpo"
 			},
 				"p2": {
-				"enunciado" : "Um bebê nasce com cerca de … ossos a mais do que um adulto!",
-				"r1":"5",
-				"r2":"94",
-				"r3":"12",
-				"r4":"70",
-				"correta" : "94"
+				"enunciado" : "Qual a função do coração?",
+				"r1":"Bombear sangue para o corpo",
+				"r2":"Produzir saliva",
+				"r3":"Controlar a temperatura do corpo",
+				"r4":"Digestar alimentos",
+				"correta" : "Bombear sangue para o corpo"
 			},
-				"p3": {
-				"enunciado" : "Primeira pessoa do singular do verbo “valer”",
-				"r1":"valo",
-				"r2":"valhio",
-				"r3":"valido",
-				"r4":"valho",
-				"correta" : "valho"
-			},
-				"p4": {
-				"enunciado" : "Normalmente, quantos litros de sangue uma pessoa tem?",
-				"r1":"entre 2 a 4 litros",
-				"r2":"entre 4 a 6 litros",
-				"r3":"10 litros",
-				"r4":"7 litros",
-				"correta" : "entre 4 a 6 litros"
-			},
-				"p5": {
-				"enunciado" : "Três doenças do sistema respiratório",
-				"r1":"faringite, bronquite e dermatite",
-				"r2":"sinusite, rinite e artrite",
-				"r3":"rinite, bronquite e sinusite",
-				"r4":"faringite, apendicite e meningite",
-				"correta" : "rinite, bronquite e sinusite"
-			},
-				"p6": {
-				"enunciado" : "Quantas casas decimais têm o número PI?",
-				"r1":"Três",
-				"r2":"Centenas",
-				"r3":"Infinitas",
-				"r4":"Vinte",
-				"correta" : "Infinitas"
-			},
-				"p7": {
-				"enunciado" : "Atualmente, quantos elementos químicos a tabela periódica possui?",
-				"r1":"109",
-				"r2":"108",
-				"r3":"118",
-				"r4":"92",
-				"correta" : "118"
-			},
-				"p8": {
-				"enunciado" : "Como se chama quem nasce na cidade de São Paulo?",
-				"r1":"Paulista",
-				"r2":"Paulistano",
-				"r3":"São-Paulino",
-				"r4":"Paulotes",
-				"correta" : "Paulistano"
-			},
-				"p9": {
-				"enunciado" : "Quem é conhecida por ser “A Rainha dos Baixinhos”?",
-				"r1":"Eliana",
-				"r2":"Kelly Key",
-				"r3":"Xuxa Meneghel",
-				"r4":"Galinha Pintadinha",
-				"correta" : "Xuxa Meneghel"
-			},
-				"p10": {
-				"enunciado" : "Quantos continentes existem?",
-				"r1":"3",
-				"r2":"2",
-				"r3":"7",
-				"r4":"5",
-				"correta" : "7"
-			},
-				"p11": {
-				"enunciado" : "Que ano começou a pandemia do Covid-19 no Brasil?",
-				"r1":"junho de 2019",
-				"r2":"setembro de 2020",
-				"r3":"dezembro de 2019",
-				"r4":"fevereiro de 2020",
-				"correta" : "fevereiro de 2020"
-			},
-				"p12": {
-				"enunciado" : "Qual oceano banha o São Paulo?",
-				"r1":"Pacifico",
-				"r2":"Atlântico",
-				"r3":"Indico",
-				"r4":"Não é banhado",
-				"correta" : "Atlântico"
-			},
-				"p13": {
-				"enunciado" : "Quantos dentes uma pessoa tem?",
-				"r1":"24",
-				"r2":"Atlântico",
-				"r3":"40",
-				"r4":"32",
-				"correta" : "32"
-			},
-				"p14": {
-				"enunciado" : "Que país tem o formato de uma bota?",
-				"r1":"Portugal",
-				"r2":"Butão",
-				"r3":"Itália",
-				"r4":"México",
-				"correta" : "Itália"
-			},
-				"p15": {
-				"enunciado" : "O que João deu em troca dos feijões?",
-				"r1":"Um cabrito",
-				"r2":"Uma vaca",
-				"r3":"Um coelho",
-				"r4":"Uma galinha",
-				"correta" : "Uma vaca"
-			},
+
 	}
   }
 }
