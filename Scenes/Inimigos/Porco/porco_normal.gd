@@ -29,3 +29,8 @@ func _physics_process(delta: float) -> void:
 		direction *= -1
 		self.scale.x *= -1
 	move_and_slide()
+
+
+func _on_colide_player_body_entered(body: Node2D) -> void:
+	if body.is_in_group('players'):
+		body.morto = true

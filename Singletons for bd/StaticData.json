@@ -130,14 +130,6 @@
 				"correta" : "Folha"
 			},
 			"p17": {
-				"enunciado" : "Qual parte da planta é responsável pela respiração?",
-				"r1":"Caule",
-				"r2":"Folha",
-				"r3":"Flor",
-				"r4":"Raiz",
-				"correta" : "Folha"
-			},
-			"p17": {
 				"enunciado" : "Quantos anos tem um século? ",
 				"r1":"100 anos",
 				"r2":"10 anos",

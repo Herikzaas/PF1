@@ -1,16 +1,16 @@
 [gd_scene load_steps=23 format=4 uid="uid://coe61m3kuwfpj"]
 
-[ext_resource type="Texture2D" uid="uid://dmu1ihgjg6u8x" path="res://assets/Tilesets/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_opd8f"]
-[ext_resource type="Texture2D" uid="uid://dl2de1cbqrob4" path="res://assets/Pauzin/TXVillageProps-ezgif.com-crop.png" id="2_iep0d"]
-[ext_resource type="Texture2D" uid="uid://cpa6iwjcbi0mb" path="res://assets/Cristais/png/crystal_02_violet.png" id="3_41wax"]
-[ext_resource type="Texture2D" uid="uid://byflsmbmpuvjh" path="res://assets/Cristais/png/crystal_02_blue.png" id="4_nhl04"]
-[ext_resource type="Texture2D" uid="uid://8iul07vcltcc" path="res://assets/Tilesets/Kings and Pigs/Sprites/14-TileSets/Decorations (32x32).png" id="5_6u18j"]
-[ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="6_vcnuc"]
-[ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/Players/Rosa/player_rosa.tscn" id="7_pjay7"]
-[ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/Players/Azul/player_azul.tscn" id="8_nnhlv"]
+[ext_resource type="Texture2D" uid="uid://dmu1ihgjg6u8x" path="res://assets/Tilesets/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="1_5negr"]
+[ext_resource type="Texture2D" uid="uid://dl2de1cbqrob4" path="res://assets/Pauzin/TXVillageProps-ezgif.com-crop.png" id="2_0qvqa"]
+[ext_resource type="Texture2D" uid="uid://cpa6iwjcbi0mb" path="res://assets/Cristais/png/crystal_02_violet.png" id="3_dlmc5"]
+[ext_resource type="Texture2D" uid="uid://byflsmbmpuvjh" path="res://assets/Cristais/png/crystal_02_blue.png" id="4_km3cm"]
+[ext_resource type="Texture2D" uid="uid://8iul07vcltcc" path="res://assets/Tilesets/Kings and Pigs/Sprites/14-TileSets/Decorations (32x32).png" id="5_qfmon"]
+[ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="6_pa1pa"]
+[ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/Players/Rosa/player_rosa.tscn" id="7_fnjtx"]
+[ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/Players/Azul/player_azul.tscn" id="8_ftwye"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6cueq"]
-texture = ExtResource("1_opd8f")
+texture = ExtResource("1_5negr")
 2:2/0 = 0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:2/0 = 0
@@ -766,7 +766,7 @@ physics_layer_0/collision_mask = 2
 sources/0 = SubResource("TileSetAtlasSource_6cueq")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tjqwh"]
-texture = ExtResource("1_opd8f")
+texture = ExtResource("1_5negr")
 2:2/0 = 0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:2/0 = 0
@@ -1526,7 +1526,7 @@ physics_layer_0/collision_mask = 2
 sources/0 = SubResource("TileSetAtlasSource_tjqwh")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j0e4l"]
-texture = ExtResource("2_iep0d")
+texture = ExtResource("2_0qvqa")
 0:0/0 = 0
 0:1/0 = 0
 0:2/0 = 0
@@ -1534,11 +1534,11 @@ texture = ExtResource("2_iep0d")
 0:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oi5r8"]
-texture = ExtResource("3_41wax")
+texture = ExtResource("3_dlmc5")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wc2wv"]
-texture = ExtResource("4_nhl04")
+texture = ExtResource("4_km3cm")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_komr5"]
@@ -1547,7 +1547,7 @@ sources/1 = SubResource("TileSetAtlasSource_oi5r8")
 sources/2 = SubResource("TileSetAtlasSource_wc2wv")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jogv8"]
-texture = ExtResource("2_iep0d")
+texture = ExtResource("2_0qvqa")
 0:0/0 = 0
 0:1/0 = 0
 0:2/0 = 0
@@ -1558,7 +1558,7 @@ texture = ExtResource("2_iep0d")
 sources/0 = SubResource("TileSetAtlasSource_jogv8")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lmbyb"]
-texture = ExtResource("5_6u18j")
+texture = ExtResource("5_qfmon")
 2:2/0 = 0
 3:2/0 = 0
 4:2/0 = 0
@@ -1626,7 +1626,7 @@ texture = ExtResource("5_6u18j")
 sources/0 = SubResource("TileSetAtlasSource_lmbyb")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fkgnc"]
-texture = ExtResource("6_vcnuc")
+texture = ExtResource("6_pa1pa")
 26:0/0 = 0
 27:0/0 = 0
 44:0/0 = 0
@@ -2977,8 +2977,8 @@ tile_set = SubResource("TileSet_305h7")
 tile_map_data = PackedByteArray("AAAcABgAAAAeACQAAAAcABkAAAAeACUAAAAdABgAAAAfACQAAAAdABkAAAAfACUAAAAeABgAAAAgACQAAAAeABkAAAAgACUAAAAaABgAAAAcACQAAAAaABkAAAAcACUAAAAbABgAAAAdACQAAAAbABkAAAAdACUAAAAfABkAAAAhACUAAAAKABMAAAAlACQAAAAKABQAAAAlACUAAAALABMAAAAmACQAAAALABQAAAAmACUAAAAMABMAAAAnACQAAAAMABQAAAAnACUAAAANABMAAAAoACQAAAANABQAAAAoACUAAAAJABMAAAAkACQAAAAJABQAAAAkACUAAAAJABUAAAAkACYAAAAKABUAAAAlACYAAAALABIAAAAmACMAAAALABUAAAAmACYAAAAMABIAAAAnACMAAAAMABUAAAAnACYAAAANABUAAAAoACYAAAAOABMAAAApACQAAAAOABQAAAApACUAAAAOABUAAAApACYAAAAOAAIAAAAkACQAAAAOAAMAAAAkACUAAAAPAAIAAAAlACQAAAAPAAMAAAAlACUAAAAQAAIAAAAmACQAAAAQAAMAAAAmACUAAAARAAIAAAAnACQAAAARAAMAAAAnACUAAAASAAIAAAAoACQAAAASAAMAAAAoACUAAAATAAIAAAApACQAAAATAAMAAAApACUAAAAiAAEAAAAoAA4AAAAiAAIAAAAoAA8AAAAiAAMAAAAoABAAAAAiAAQAAAAoABEAAAAjAAEAAAApAA4AAAAjAAIAAAApAA8AAAAjAAMAAAApABAAAAAjAAQAAAApABEAAAABABUAAAAsAAcAAAABABYAAAAsAAgAAAABABcAAAAsAAkAAAABABgAAAAsAAoAAAABABkAAAAsAAsAAAACABUAAAAtAAcAAAACABYAAAAtAAgAAAACABcAAAAtAAkAAAACABgAAAAtAAoAAAACABkAAAAtAAsAAAArABQAAAACAAoAAAArABUAAAACAAsAAAArABYAAAACAAwAAAArABcAAAACAA0AAAArABkAAAACAA8AAAAsABQAAAADAAoAAAAsABUAAAADAAsAAAAsABYAAAADAAwAAAAsABcAAAADAA0AAAAsABgAAAADAA4AAAAsABkAAAADAA8AAAAtABQAAAAEAAoAAAAtABUAAAAEAAsAAAAtABYAAAAEAAwAAAAtABcAAAAEAA0AAAAtABgAAAAEAA4AAAAtABkAAAAEAA8AAAAuABQAAAAFAAoAAAAuABUAAAAFAAsAAAAuABYAAAAFAAwAAAAuABcAAAAFAA0AAAAuABgAAAAFAA4AAAAuABkAAAAFAA8AAAAvABQAAAAGAAoAAAAvABUAAAAGAAsAAAAvABYAAAAGAAwAAAAvABcAAAAGAA0AAAAvABgAAAAGAA4AAAAvABkAAAAGAA8AAAAwABQAAAAHAAoAAAAwABUAAAAHAAsAAAAwABYAAAAHAAwAAAAwABkAAAAHAA8AAAAxABgAAAAIAA4AAAAxABkAAAAIAA8AAAAyABgAAAAJAA4AAAAyABkAAAAJAA8AAAALABkAAAA6AAcAAAALABoAAAA6AAgAAAAMABkAAAA7AAcAAAAMABoAAAA7AAgAAAAMABYAAAA7AAIAAAAMABcAAAA7AAMAAAAMABgAAAA7AAQAAAAMAAMAAAAkABgAAAANAAMAAAAlABgAAAANAAQAAAAlABkAAAAOAAQAAAAmABkAAAAPAAQAAAAnABkAAAAnAA8AAAAWAAUAAAAoAA8AAAAXAAUAAAApAA8AAAAYAAUAAAACAAwAAAATAAwAAAACAA0AAAATAA0AAAADAAwAAAAUAAwAAAADAA0AAAAUAA0AAAAEAAwAAAAVAAwAAAAFAAwAAAAWAAwAAAAGAAwAAAAXAAwAAAAGAA0AAAAXAA0AAAAsAAsAAAAcAAUAAAAsAAwAAAAcAAYAAAAsAA0AAAAcAAcAAAAtAAsAAAAdAAUAAAAtAAwAAAAdAAYAAAAtAA0AAAAdAAcAAAAuAAsAAAAeAAUAAAAuAAwAAAAeAAYAAAAuAA0AAAAeAAcAAAAvAAsAAAAfAAUAAAAvAAwAAAAfAAYAAAAvAA0AAAAfAAcAAAAwAAsAAAAgAAUAAAAwAAwAAAAgAAYAAAAwAA0AAAAgAAcAAAAxAAsAAAAhAAUAAAAxAAwAAAAhAAYAAAAxAA0AAAAhAAcAAAAcAAgAAAAYAAEAAAAcAAkAAAAYAAIAAAAcAAoAAAAYAAMAAAAdAAgAAAAZAAEAAAAdAAkAAAAZAAIAAAAdAAoAAAAZAAMAAAA=")
 tile_set = SubResource("TileSet_cfpkp")
 
-[node name="PlayerRosa" parent="." instance=ExtResource("7_pjay7")]
+[node name="PlayerRosa" parent="." instance=ExtResource("7_fnjtx")]
 position = Vector2(234, 143)
 
-[node name="PlayerAzul" parent="." instance=ExtResource("8_nnhlv")]
+[node name="PlayerAzul" parent="." instance=ExtResource("8_ftwye")]
 position = Vector2(492, 147)

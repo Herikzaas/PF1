@@ -37,7 +37,7 @@ func _physics_process(delta):
 	if morto :
 		velocity.x = 0
 		animation(direction)
-
+		
 	move_and_slide()
 
 func animation(direction):
@@ -55,7 +55,8 @@ func animation(direction):
 		
 	if morto :
 		anim.play('dead')
-	
 func _on_anim_rosa_animation_finished() -> void:
 	if anim.animation == 'dead' :
-		queue_free()
+		$"/root/TransitionScreen".transition()
+		await $"/root/TransitionScreen".on_transition_finished
+		get_tree().change_scene_to_packed($"/root/Global".reinicia_fase)

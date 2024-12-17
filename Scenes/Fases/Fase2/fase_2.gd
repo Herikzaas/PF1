@@ -8,7 +8,7 @@ func _ready() -> void:
 	$"/root/Global".num_questoes = 2
 	$"/root/Global".liberar_paredeR = ""
 	$"/root/Global".liberar_paredeA = ""
-	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+	$"/root/Global".fase_pre = preload("res://Scenes/Fases/Fase3/fase_3.tscn")
+ 
 func _process(delta: float) -> void:
 	pass

@@ -5076,7 +5076,7 @@ tile_set = SubResource("TileSet_3kcrp")
 [node name="cristal_rosaParede" parent="Gemas" instance=ExtResource("7_12ns7")]
 position = Vector2(135, 405)
 
-[node name="cristal_azul" parent="Gemas" instance=ExtResource("8_df62n")]
+[node name="cristal_azulParede" parent="Gemas" instance=ExtResource("8_df62n")]
 position = Vector2(352, 180)
 
 [node name="PortaF1" parent="." instance=ExtResource("13_wftwj")]

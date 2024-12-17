@@ -23,6 +23,11 @@ func _physics_process(delta: float) -> void:
 			if $"/root/Global".certa == true :
 				move_platform()
 				funcionando = true
+	if $"/root/Global".liberar_platA == "PlataformaAzulF3" :
+		if self.name == "PlataformaAzul" and funcionando == false :
+			if $"/root/Global".certa == true :
+				move_platform()
+				funcionando = true
 				
 func move_platform():
 	var move_direction = Vector2.RIGHT * distance if move_horizontal else Vector2.UP * distance
