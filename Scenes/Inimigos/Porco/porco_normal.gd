@@ -1,11 +1,17 @@
 extends CharacterBody2D
 
 
-var SPEED = 50
+var SPEED = 0
 const JUMP_VELOCITY = -400.0
 var direction = -1
 
 @onready var animacao = $anim as AnimatedSprite2D
+
+func _ready() -> void:
+	if self.name == "PorcoNormalDireita" :
+		direction = -1
+	else :
+		direction = 1
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():

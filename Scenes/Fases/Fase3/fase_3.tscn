@@ -3066,10 +3066,10 @@ position = Vector2(75, 372)
 [node name="cristal_rosaInimigo" parent="." instance=ExtResource("10_ro82h")]
 position = Vector2(608, 228)
 
-[node name="PorcoNormal" parent="." instance=ExtResource("12_hwlcu")]
+[node name="PorcoNormalDireita" parent="." instance=ExtResource("12_hwlcu")]
 position = Vector2(246, 396)
 scale = Vector2(1.5, 1.5)
 
-[node name="PorcoNormal2" parent="." instance=ExtResource("12_hwlcu")]
+[node name="PorcoNormalEsq" parent="." instance=ExtResource("12_hwlcu")]
 position = Vector2(396, 395)
 scale = Vector2(-1.5, 1.5)
