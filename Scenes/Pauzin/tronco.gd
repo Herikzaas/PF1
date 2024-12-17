@@ -1,5 +1,6 @@
 extends StaticBody2D
 
+var velocidade = 15
 #botar gravidade dps
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -25,3 +26,10 @@ func liberar(delta) -> void :
 				move_local_y(delta*15)
 				await get_tree().create_timer(12).timeout
 				self.visible = false
+	if $"/root/Global".liberar_paredeR == "ParedeRosaF3" :
+		if self.name == "ParedeInimigoR" or self.name == "ParedeInimigoR2":
+			if $"/root/Global".certa == true :
+				if self.position.y >= 410 :
+					move_local_y(delta * -velocidade)
+				else :
+					velocidade = 0
