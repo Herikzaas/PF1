@@ -1,6 +1,7 @@
-[gd_scene load_steps=29 format=3 uid="uid://sv7u01lqvewm"]
+[gd_scene load_steps=30 format=3 uid="uid://sv7u01lqvewm"]
 
 [ext_resource type="Texture2D" uid="uid://c5jxtthsdl75j" path="res://assets/Tilesets/Kings and Pigs/Sprites/03-Pig/Attack (34x28).png" id="1_2jl06"]
+[ext_resource type="Script" path="res://Scenes/Inimigos/Porco/porco_normal.gd" id="1_geyfw"]
 [ext_resource type="Texture2D" uid="uid://bibawnv1jikvf" path="res://assets/Tilesets/Kings and Pigs/Sprites/03-Pig/Idle (34x28).png" id="2_bxanj"]
 [ext_resource type="Texture2D" uid="uid://dfe7kh1fs5xmv" path="res://assets/Tilesets/Kings and Pigs/Sprites/03-Pig/Run (34x28).png" id="3_1onui"]
 
@@ -186,6 +187,7 @@ size = Vector2(228, 20)
 position = Vector2(-1, -1)
 collision_layer = 4
 collision_mask = 3
+script = ExtResource("1_geyfw")
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wjd75")
