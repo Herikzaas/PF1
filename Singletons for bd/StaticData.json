@@ -300,30 +300,6 @@
 				"correta" : "Bombear sangue para o corpo"
 			},
 				"p2": {
-				"enunciado" : "Um bebê nasce com cerca de … ossos a mais do que um adulto!",
-				"r1":"5",
-				"r2":"94",
-				"r3":"12",
-				"r4":"70",
-				"correta" : "94"
-			},
-				"p3": {
-				"enunciado" : "Primeira pessoa do singular do verbo “valer”",
-				"r1":"valo",
-				"r2":"valhio",
-				"r3":"valido",
-				"r4":"valho",
-				"correta" : "valho"
-			},
-				"p4": {
-				"enunciado" : "Normalmente, quantos litros de sangue uma pessoa tem?",
-				"r1":"entre 2 a 4 litros",
-				"r2":"entre 4 a 6 litros",
-				"r3":"10 litros",
-				"r4":"7 litros",
-				"correta" : "entre 4 a 6 litros"
-			},
-				"p5": {
 				"enunciado" : "Qual a função do coração?",
 				"r1":"Bombear sangue para o corpo",
 				"r2":"Produzir saliva",
@@ -331,6 +307,7 @@
 				"r4":"Digestar alimentos",
 				"correta" : "Bombear sangue para o corpo"
 			},
+
 	}
   }
 }
