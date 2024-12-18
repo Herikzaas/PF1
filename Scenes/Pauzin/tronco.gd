@@ -4,7 +4,7 @@ var velocidade = 15
 #botar gravidade dps
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	velocidade = 15
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -37,3 +37,14 @@ func liberar(delta) -> void :
 					move_local_y(delta * -velocidade)
 				else :
 					velocidade = 0
+	if $"/root/Global".liberar_paredeA == "ParedeAzulT1" :
+		if self.name == "Parede_AzulTranca" :
+			if self.position.y <= 121 :
+				move_local_y(delta * velocidade)
+			else :
+				velocidade = 0
+		if self.name == "Parede_AzulTranca2" :
+			if self.position.y >= 37 :
+				move_local_y(delta * -velocidade)
+			else :
+				velocidade = 0
