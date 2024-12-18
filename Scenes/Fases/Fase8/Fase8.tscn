@@ -6010,11 +6010,11 @@ tile_map_data = PackedByteArray("AAAAAAAAAgALAAMAAAAAAAEAAgALAAMAAAAAAAIAAgALAAM
 tile_set = SubResource("TileSet_174rm")
 
 [node name="Parede_AzulTranca" parent="." instance=ExtResource("9_stv4j")]
-position = Vector2(328, 37)
+position = Vector2(327, 38)
 scale = Vector2(1, 0.7)
 
 [node name="Parede_AzulTranca2" parent="." instance=ExtResource("9_stv4j")]
-position = Vector2(270, 122)
+position = Vector2(268, 121)
 scale = Vector2(1, 0.7)
 
 [node name="TileMapLayerPLATAFORMAcéu" type="TileMapLayer" parent="."]
@@ -6028,7 +6028,7 @@ tile_set = SubResource("TileSet_qhycr")
 position = Vector2(704, 103)
 
 [node name="PlayerAzul" parent="." instance=ExtResource("9_vabhi")]
-position = Vector2(679, 44)
+position = Vector2(43, 25)
 
 [node name="TileMapLayerCHAO" type="TileMapLayer" parent="."]
 position = Vector2(1, 24)
@@ -6074,10 +6074,10 @@ position = Vector2(525, 386)
 [node name="fall_zone2" parent="Node" instance=ExtResource("15_83a7f")]
 position = Vector2(263, 162)
 
-[node name="cristal_azul" parent="." instance=ExtResource("16_vof4y")]
+[node name="cristal_azulTranca" parent="." instance=ExtResource("16_vof4y")]
 position = Vector2(42, 59)
 
-[node name="cristal_azul2" parent="." instance=ExtResource("16_vof4y")]
+[node name="cristal_azulTranca2" parent="." instance=ExtResource("16_vof4y")]
 position = Vector2(111, 140)
 
 [node name="cristal_azul3" parent="." instance=ExtResource("16_vof4y")]
