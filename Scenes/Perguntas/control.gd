@@ -1,13 +1,17 @@
 extends Control
 
-var i = randi_range(1,35)
+var i = 0
 var first = true
 var perdeu = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if $"/root/Global".tipo_fase == "tipo1" :
+		i = randi_range(1,35)
+	else :
+		i = randi_range(36,65)
 	$"/root/Global".certa = false
 	while i in $"/root/Global".perg_usadas :
-		if $"/root/Global".fase <= 5 :
+		if $"/root/Global".tipo_fase == "tipo1" :
 			i = randi_range(1,15)
 		else :
 			i = randi_range(16,35)

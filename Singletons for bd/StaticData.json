@@ -290,8 +290,7 @@
 				"r4":"Digestar alimentos",
 				"correta" : "Bombear sangue para o corpo"
 			},
-		"fase2": {
-				"p1": {
+				"p36": {
 				"enunciado" : "Quantos centímetros tem 1 metro?",
 				"r1":"10 centímetros",
 				"r2":"100 centímetros",
@@ -299,15 +298,15 @@
 				"r4":"10000 centímetros",
 				"correta" : "100 centímetros"
 			},
-				"p2": {
-				"enunciado" : "Um bebê nasce com cerca de … ossos a mais do que um adulto!",
+				"p37": {
+				"enunciado" : "Um bebê nasce com cerca de … ossos a mais do que um adulto",
 				"r1":"5",
 				"r2":"94",
 				"r3":"12",
 				"r4":"70",
 				"correta" : "94"
 			},
-				"p3": {
+				"p38": {
 				"enunciado" : "Primeira pessoa do singular do verbo “valer”",
 				"r1":"valo",
 				"r2":"valhio",
@@ -315,7 +314,7 @@
 				"r4":"valho",
 				"correta" : "valho"
 			},
-				"p4": {
+				"p39": {
 				"enunciado" : "Normalmente, quantos litros de sangue uma pessoa tem?",
 				"r1":"entre 2 a 4 litros",
 				"r2":"entre 4 a 6 litros",
@@ -323,7 +322,7 @@
 				"r4":"7 litros",
 				"correta" : "entre 4 a 6 litros"
 			},
-				"p5": {
+				"p40": {
 				"enunciado" : "Três doenças do sistema respiratório",
 				"r1":"faringite, bronquite e dermatite",
 				"r2":"sinusite, rinite e artrite",
@@ -331,7 +330,7 @@
 				"r4":"faringite, apendicite e meningite",
 				"correta" : "rinite, bronquite e sinusite"
 			},
-				"p6": {
+				"p41": {
 				"enunciado" : "Quantas casas decimais têm o número PI?",
 				"r1":"Três",
 				"r2":"Centenas",
@@ -339,7 +338,7 @@
 				"r4":"Vinte",
 				"correta" : "Infinitas"
 			},
-				"p7": {
+				"p42": {
 				"enunciado" : "Atualmente, quantos elementos químicos a tabela periódica possui?",
 				"r1":"109",
 				"r2":"108",
@@ -347,7 +346,7 @@
 				"r4":"92",
 				"correta" : "118"
 			},
-				"p8": {
+				"p43": {
 				"enunciado" : "Como se chama quem nasce na cidade de São Paulo?",
 				"r1":"Paulista",
 				"r2":"Paulistano",
@@ -355,7 +354,7 @@
 				"r4":"Paulotes",
 				"correta" : "Paulistano"
 			},
-				"p9": {
+				"p44": {
 				"enunciado" : "Quem é conhecida por ser “A Rainha dos Baixinhos”?",
 				"r1":"Eliana",
 				"r2":"Kelly Key",
@@ -363,7 +362,7 @@
 				"r4":"Galinha Pintadinha",
 				"correta" : "Xuxa Meneghel"
 			},
-				"p10": {
+				"p45": {
 				"enunciado" : "Quantos continentes existem?",
 				"r1":"3",
 				"r2":"2",
@@ -371,7 +370,7 @@
 				"r4":"5",
 				"correta" : "7"
 			},
-				"p11": {
+				"p46": {
 				"enunciado" : "Que ano começou a pandemia do Covid-19 no Brasil?",
 				"r1":"junho de 2019",
 				"r2":"setembro de 2020",
@@ -379,7 +378,7 @@
 				"r4":"fevereiro de 2020",
 				"correta" : "fevereiro de 2020"
 			},
-				"p12": {
+				"p47": {
 				"enunciado" : "Qual oceano banha o São Paulo?",
 				"r1":"Pacifico",
 				"r2":"Atlântico",
@@ -387,7 +386,7 @@
 				"r4":"Não é banhado",
 				"correta" : "Atlântico"
 			},
-				"p13": {
+				"p48": {
 				"enunciado" : "Quantos dentes uma pessoa tem?",
 				"r1":"24",
 				"r2":"Atlântico",
@@ -395,7 +394,7 @@
 				"r4":"32",
 				"correta" : "32"
 			},
-				"p14": {
+				"p49": {
 				"enunciado" : "Que país tem o formato de uma bota?",
 				"r1":"Portugal",
 				"r2":"Butão",
@@ -403,7 +402,7 @@
 				"r4":"México",
 				"correta" : "Itália"
 			},
-				"p15": {
+				"p50": {
 				"enunciado" : "O que João deu em troca dos feijões?",
 				"r1":"Um cabrito",
 				"r2":"Uma vaca",
@@ -411,7 +410,126 @@
 				"r4":"Uma galinha",
 				"correta" : "Uma vaca"
 			},
+				"p51": {
+				"enunciado" : "Qual documento é necessário para votar nas eleições?",
+				"r1":"Certidão de nascimento",
+				"r2":"Título eleitoral",
+				"r3":"Cartão de vacinação",
+				"r4":"Matrícula escolar",
+				"correta" : "Título eleitoral"
+			},
+				"p52": {
+				"enunciado" : "Qual o estado físico da água quando está congelada?",
+				"r1":"Sólido",
+				"r2":"Líquido",
+				"r3":"Gasoso",
+				"r4":"Plasma",
+				"correta" : "Sólido"
+			},
+				"p53": {
+				"enunciado" : "Qual o maior oceano do mundo?",
+				"r1":"Atlântico",
+				"r2":"Pacífico",
+				"r3":"Índico",
+				"r4":"Ártico",
+				"correta" : "Pacífico"
+			},
+				"p54": {
+				"enunciado" : "Qual o continente mais frio do mundo?",
+				"r1":"África",
+				"r2":"Ásia",
+				"r3":"Antártica",
+				"r4":"Europa",
+				"correta" : "Antártica"
+			},
+				"p55": {
+				"enunciado" : "Qual país que inventou o futebol?",
+				"r1":"Brasil",
+				"r2":"Inglaterra",
+				"r3":"Argentina",
+				"r4":"Espanha",
+				"correta" : "Inglaterra"
+			},
+				"p56": {
+				"enunciado" : "Qual a continuação correta do Hino Nacional?",
+				"r1":"Futuras, ó Brasil, foram da América…",
+				"r2":"Fulguras, ó Brasil, florão da América…",
+				"r3":"Figuras, do Brasil,  tornam a América…",
+				"r4":"Culturas, do Brasil, moram na América…",
+				"correta" : "Fulguras, ó Brasil, florão da América…"
+			},
+				"p57": {
+				"enunciado" : "Qual a forma correta?",
+				"r1":"Eu coloro",
+				"r2":"Eu colorir",
+				"r3":"Eu colori",
+				"r4":"Eu colora",
+				"correta" : "Eu coloro"
+			},
+				"p58": {
+				"enunciado" : "Qual é o menor e o maior país do mundo?",
+				"r1":"Vaticano e Rússia",
+				"r2":"Nauru e China",
+				"r3":"Mônaco e Canadá",
+				"r4":"Malta e Estados Unidos",
+				"correta" : "Vaticano e Rússia"
+			},
+				"p59": {
+				"enunciado" : "Quando o fogo foi descoberto na pré-história?",
+				"r1":"Idade dos Metais",
+				"r2":"Neolítico",
+				"r3":"Idade Média",
+				"r4":"Paleolítico",
+				"correta" : "Paleolítico"
+			},
+				"p60": {
+				"enunciado" : "Quais as duas línguas mais faladas no mundo?",
+				"r1":"Inglês e espanhol",
+				"r2":"Inglês e mandarim chinês",
+				"r3":"Inglês e francês",
+				"r4":"Francês e espanhol",
+				"correta" : "Inglês e mandarim chinês"
+			},
+				"p61": {
+				"enunciado" : "Quem pintou Mona Lisa?",
+				"r1":"Vincent van Gogh",
+				"r2":"Pablo Picasso",
+				"r3":"Leonardo da Vinci",
+				"r4":"Michelangelo",
+				"correta" : "Leonardo da Vinci"
+			},
+				"p62": {
+				"enunciado" : "Qual o maior animal terrestre?",
+				"r1":"Baleia Azul",
+				"r2":"Rinoceronte",
+				"r3":"Elefante africano",
+				"r4":"Avestruz",
+				"correta" : "Elefante africano"
+			},
+				"p63": {
+				"enunciado" : "Em quantas regiões o Brasil é dividido?",
+				"r1":"3",
+				"r2":"7",
+				"r3":"5",
+				"r4":"8",
+				"correta" : "5"
+			},
+				"p64": {
+				"enunciado" : "Qual é o único mamífero que voa?",
+				"r1":"Corvo",
+				"r2":"Falcão",
+				"r3":"Andorinha",
+				"r4":"Morcego",
+				"correta" : "Morcego"
+			},
+				"p65": {
+				"enunciado" : "Quantos ossos possui no corpo humano?",
+				"r1":"206",
+				"r2":"210",
+				"r3":"215",
+				"r4":"220",
+				"correta" : "206"
+			},
 	}
   }
-}
 }

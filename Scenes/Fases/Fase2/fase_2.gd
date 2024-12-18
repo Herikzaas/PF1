@@ -9,6 +9,7 @@ func _ready() -> void:
 	$"/root/Global".liberar_paredeR = ""
 	$"/root/Global".liberar_paredeA = ""
 	$"/root/Global".fase_pre = preload("res://Scenes/Fases/Fase3/fase_3.tscn")
+	$"/root/Global".tipo_fase = "tipo1"
  
 func _process(delta: float) -> void:
 	pass

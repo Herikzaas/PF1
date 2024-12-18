@@ -15,6 +15,7 @@ var liberar_platA
 var plataforma 
 var fase_pre
 var reinicia_fase
+var tipo_fase = ""
 
 
 #func _process(delta: float) -> void:
