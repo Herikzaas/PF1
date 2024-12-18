@@ -8,7 +8,10 @@ func _ready() -> void:
 	$"/root/Global".certa = false
 	if first == false :
 		while i in $"/root/Global".perg_usadas :
-			i = randi_range(1,35)
+			if $"/root/Global".fase <= 5 :
+				i = randi_range(1,15)
+			else :
+				i = randi_range(16,35)
 	$"/root/Global".perg_usadas.append(i)
 	i = str(i)
 	i = "p"+i

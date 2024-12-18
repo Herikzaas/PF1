@@ -8,6 +8,8 @@ func _ready() -> void:
 	$"/root/Global".num_questoes = 3
 	$"/root/Global".liberar_paredeR = ""
 	$"/root/Global".liberar_paredeA = ""
+	$"/root/Global".liberar_platA = ""
+	$"/root/Global".liberar_platR = ""
 	$"/root/Global".fase_pre = preload("res://Scenes/Fases/Fase6/fase_6.tscn")
 
 

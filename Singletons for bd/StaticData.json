@@ -290,7 +290,7 @@
 				"r4":"Digestar alimentos",
 				"correta" : "Bombear sangue para o corpo"
 			},
-		"fase2" : {
+		"fase2": {
 				"p1": {
 				"enunciado" : "Quantos centímetros tem 1 metro?",
 				"r1":"10 centímetros",
