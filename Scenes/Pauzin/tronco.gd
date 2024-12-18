@@ -39,12 +39,6 @@ func liberar(delta) -> void :
 					velocidade = 0
 	if $"/root/Global".liberar_paredeA == "ParedeAzulT1" :
 		if self.name == "Parede_AzulTranca" :
-			if self.position.y <= 121 :
-				move_local_y(delta * velocidade)
-			else :
-				velocidade = 0
-		if self.name == "Parede_AzulTranca2" :
-			if self.position.y >= 37 :
-				move_local_y(delta * -velocidade)
-			else :
-				velocidade = 0
+			if $"/root/Global".certa == true :
+				if self.position.y <= 122 :
+					move_local_y(delta * -velocidade)
