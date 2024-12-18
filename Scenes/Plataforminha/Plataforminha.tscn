@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bno7c4l80r2mp"]
+
+[ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="1_jbiky"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c42nn"]
+size = Vector2(13, 7)
+
+[node name="palatorminha" type="Area2D"]
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jbiky")
+region_enabled = true
+region_rect = Rect2(69.1264, 681.864, 18.2809, 15.0164)
+region_filter_clip_enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_c42nn")
