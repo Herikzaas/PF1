@@ -6,12 +6,11 @@ var perdeu = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$"/root/Global".certa = false
-	if first == false :
-		while i in $"/root/Global".perg_usadas :
-			if $"/root/Global".fase <= 5 :
-				i = randi_range(1,15)
-			else :
-				i = randi_range(16,35)
+	while i in $"/root/Global".perg_usadas :
+		if $"/root/Global".fase <= 5 :
+			i = randi_range(1,15)
+		else :
+			i = randi_range(16,35)
 	$"/root/Global".perg_usadas.append(i)
 	i = str(i)
 	i = "p"+i
