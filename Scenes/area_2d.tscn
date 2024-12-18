@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bckgmcyvngkee"]
+
+[ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="1_nxmq2"]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_nxmq2")
+region_enabled = true
