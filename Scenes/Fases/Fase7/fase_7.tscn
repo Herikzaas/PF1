@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://c1stno7v86384"]
+[gd_scene load_steps=24 format=4 uid="uid://c1stno7v86384"]
 
 [ext_resource type="Texture2D" uid="uid://lhy70dgss568" path="res://assets/Tilesets/Dungeon Tile Set/Dungeon Tile Set.png" id="1_nkrjg"]
 [ext_resource type="Texture2D" uid="uid://d3r7cijg1ws6w" path="res://assets/Tilesets/CandyPlatformerTiles/CandyPlatformerTiles/CandyItems.png" id="2_jwlj4"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cfrjphtag65sd" path="res://assets/Tilesets/Cave Tilesets/( D&K ) Caves Tile V.2 (1).png" id="5_utu1l"]
 [ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/Players/Rosa/player_rosa.tscn" id="6_a6lwn"]
 [ext_resource type="PackedScene" uid="uid://die0ercty8yag" path="res://Scenes/Porta/porta.tscn" id="7_gj5eb"]
+[ext_resource type="PackedScene" uid="uid://hb3gtfm1qbfi" path="res://Scenes/Fall zone/fall_zone.tscn" id="9_syfwb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ageu4"]
 texture = ExtResource("1_nkrjg")
@@ -2222,3 +2223,23 @@ sprite_frames = SubResource("SpriteFrames_as46k")
 
 [node name="Porta" parent="." instance=ExtResource("7_gj5eb")]
 position = Vector2(63, 44)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Fall_zone" parent="Node" instance=ExtResource("9_syfwb")]
+position = Vector2(189, 358)
+
+[node name="Fall_zone3" parent="Node" instance=ExtResource("9_syfwb")]
+position = Vector2(605, 422)
+
+[node name="Fall_zone2" parent="Node" instance=ExtResource("9_syfwb")]
+position = Vector2(572, 422)
+
+[node name="Area2D" parent="Node" instance=ExtResource("9_syfwb")]
+position = Vector2(589, 355)
+
+[node name="Area2D2" parent="Node" instance=ExtResource("9_syfwb")]
+position = Vector2(172, 420)
+
+[node name="Area2D3" parent="Node" instance=ExtResource("9_syfwb")]
+position = Vector2(205, 420)
