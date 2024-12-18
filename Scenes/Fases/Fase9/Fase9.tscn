@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://c828qg5qr3vxr"]
+[gd_scene load_steps=24 format=4 uid="uid://c828qg5qr3vxr"]
 
 [ext_resource type="Texture2D" uid="uid://lhy70dgss568" path="res://assets/Tilesets/Dungeon Tile Set/Dungeon Tile Set.png" id="1_t8eup"]
 [ext_resource type="Texture2D" uid="uid://d3r7cijg1ws6w" path="res://assets/Tilesets/CandyPlatformerTiles/CandyPlatformerTiles/CandyItems.png" id="2_fbfnk"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://1enhbpbxj7m6" path="res://assets/Tilesets/Decoracoes Vila/TX Village Props.png" id="6_k8hep"]
 [ext_resource type="Texture2D" uid="uid://cfrjphtag65sd" path="res://assets/Tilesets/Cave Tilesets/( D&K ) Caves Tile V.2 (1).png" id="7_85b7k"]
 [ext_resource type="Texture2D" uid="uid://b5n4pu2glofj" path="res://assets/Tilesets/Cave Tilesets/pixil-frame-0.png" id="8_gsqg3"]
+[ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/Players/Rosa/player_rosa.tscn" id="9_k7tok"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3uxgb"]
 texture = ExtResource("1_t8eup")
@@ -3278,7 +3279,9 @@ texture = ExtResource("6_k8hep")
 2:43/0 = 0
 3:43/0 = 0
 4:43/0 = 0
+4:43/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, 8, -8, 8, -4.375, 0.25, -4)
 5:43/0 = 0
+5:43/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -1.875, -8, -1.625, -4.5, -2.875, -4.25, -8, -3.875)
 6:43/0 = 0
 7:43/0 = 0
 9:43/0 = 0
@@ -4008,5 +4011,8 @@ tile_set = SubResource("TileSet_agcc1")
 
 [node name="TileMapLayerCHAO" type="TileMapLayer" parent="."]
 position = Vector2(2, 48)
-tile_map_data = PackedByteArray("AAAHABUAAAAKAAoAAAAHABYAAAAKAAsAAAAIABUAAAALAAoAAAAIABYAAAALAAsAAAANABQABAAKACcAAAANABUABAAKACgAAAANABYABAAKACkAAAAOABQABAALACcAAAAOABUABAALACgAAAAOABYABAALACkAAAA=")
+tile_map_data = PackedByteArray("AAAHABUAAAAKAAoAAAAHABYAAAAKAAsAAAAIABUAAAALAAoAAAAIABYAAAALAAsAAAAMABUABAAEACsAAAANABUABAAFACsAAAAQABUABAAEACsAAAARABUABAAFACsAAAAUABUABAAEACsAAAAVABUABAAFACsAAAAYABUABAAEACsAAAAZABUABAAFACsAAAA=")
 tile_set = SubResource("TileSet_m65ca")
+
+[node name="PlayerRosa" parent="." groups=["Rosa"] instance=ExtResource("9_k7tok")]
+position = Vector2(85, 393)
