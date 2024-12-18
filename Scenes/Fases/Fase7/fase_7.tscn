@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://c1stno7v86384"]
+[gd_scene load_steps=26 format=4 uid="uid://c1stno7v86384"]
 
 [ext_resource type="Script" path="res://Scenes/Fases/Fase7/fase_7.gd" id="1_hyfaf"]
 [ext_resource type="Texture2D" uid="uid://lhy70dgss568" path="res://assets/Tilesets/Dungeon Tile Set/Dungeon Tile Set.png" id="1_nkrjg"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://cfrjphtag65sd" path="res://assets/Tilesets/Cave Tilesets/( D&K ) Caves Tile V.2 (1).png" id="5_utu1l"]
 [ext_resource type="PackedScene" uid="uid://dxbi7vjfcksvm" path="res://Scenes/Players/Rosa/player_rosa.tscn" id="6_a6lwn"]
 [ext_resource type="PackedScene" uid="uid://die0ercty8yag" path="res://Scenes/Porta/porta.tscn" id="7_gj5eb"]
+[ext_resource type="PackedScene" uid="uid://bg11bx2yqbk1m" path="res://Scenes/Cristais/cristal_azul.tscn" id="8_hr4av"]
+[ext_resource type="PackedScene" uid="uid://ct1xsk746e3gg" path="res://Scenes/Cristais/cristal_rosa.tscn" id="9_ee2x5"]
 [ext_resource type="PackedScene" uid="uid://hb3gtfm1qbfi" path="res://Scenes/Fall zone/fall_zone.tscn" id="9_syfwb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ageu4"]
@@ -2188,8 +2190,6 @@ texture = ExtResource("2_jwlj4")
 [sub_resource type="TileSet" id="TileSet_72j6p"]
 sources/0 = SubResource("TileSetAtlasSource_puuub")
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_as46k"]
-
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -2211,37 +2211,53 @@ tile_set = SubResource("TileSet_31ryt")
 
 [node name="TileMapLayerPERGUNTAS" type="TileMapLayer" parent="."]
 position = Vector2(-23, -40)
-tile_map_data = PackedByteArray("AAAoABAAAAACAAMAAAAiAAUAAAACAAMAAAAIAAsAAAABAAMAAAAMAAYAAAABAAMAAAA=")
 tile_set = SubResource("TileSet_72j6p")
+
+[node name="Porta" parent="." instance=ExtResource("7_gj5eb")]
+position = Vector2(63, 44)
+
+[node name="Cristais" type="Node" parent="."]
+
+[node name="cristal_azul" parent="Cristais" instance=ExtResource("8_hr4av")]
+position = Vector2(120, 140)
+
+[node name="cristal_azul2" parent="Cristais" instance=ExtResource("8_hr4av")]
+position = Vector2(148, 60)
+
+[node name="cristal_rosa" parent="Cristais" instance=ExtResource("9_ee2x5")]
+position = Vector2(522, 45)
+
+[node name="cristal_rosa2" parent="Cristais" instance=ExtResource("9_ee2x5")]
+position = Vector2(619, 236)
+
+[node name="cristal_rosa3" parent="Cristais" instance=ExtResource("9_ee2x5")]
+position = Vector2(314, 396)
+
+[node name="cristal_azul3" parent="Cristais" instance=ExtResource("8_hr4av")]
+position = Vector2(519, 397)
 
 [node name="PlayerAzul" parent="." instance=ExtResource("5_7vgm7")]
 position = Vector2(37, 391)
 
 [node name="PlayerRosa" parent="." groups=["Rosa"] instance=ExtResource("6_a6lwn")]
-position = Vector2(71, 391)
+position = Vector2(609, 134)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_as46k")
+[node name="Fall_zone" type="Node" parent="."]
 
-[node name="Porta" parent="." instance=ExtResource("7_gj5eb")]
-position = Vector2(63, 44)
-
-[node name="Node" type="Node" parent="."]
-
-[node name="Fall_zone" parent="Node" instance=ExtResource("9_syfwb")]
+[node name="Fall_zone" parent="Fall_zone" instance=ExtResource("9_syfwb")]
 position = Vector2(189, 355)
 
-[node name="Fall_zone3" parent="Node" instance=ExtResource("9_syfwb")]
+[node name="Fall_zone3" parent="Fall_zone" instance=ExtResource("9_syfwb")]
 position = Vector2(606, 419)
 
-[node name="Fall_zone2" parent="Node" instance=ExtResource("9_syfwb")]
+[node name="Fall_zone2" parent="Fall_zone" instance=ExtResource("9_syfwb")]
 position = Vector2(573, 419)
 
-[node name="Area2D" parent="Node" instance=ExtResource("9_syfwb")]
+[node name="Area2D" parent="Fall_zone" instance=ExtResource("9_syfwb")]
 position = Vector2(589, 355)
 
-[node name="Area2D2" parent="Node" instance=ExtResource("9_syfwb")]
+[node name="Area2D2" parent="Fall_zone" instance=ExtResource("9_syfwb")]
 position = Vector2(172, 419)
 
-[node name="Area2D3" parent="Node" instance=ExtResource("9_syfwb")]
+[node name="Area2D3" parent="Fall_zone" instance=ExtResource("9_syfwb")]
 position = Vector2(205, 419)

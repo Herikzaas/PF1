@@ -1,5 +1,6 @@
-[gd_scene load_steps=33 format=4 uid="uid://d3gjc1yy88as5"]
+[gd_scene load_steps=36 format=4 uid="uid://d3gjc1yy88as5"]
 
+[ext_resource type="Script" path="res://Scenes/Fases/Fase8/fase_8.gd" id="1_4yk8b"]
 [ext_resource type="Texture2D" uid="uid://lhy70dgss568" path="res://assets/Tilesets/Dungeon Tile Set/Dungeon Tile Set.png" id="1_flqjd"]
 [ext_resource type="Texture2D" uid="uid://d3r7cijg1ws6w" path="res://assets/Tilesets/CandyPlatformerTiles/CandyPlatformerTiles/CandyItems.png" id="2_nf2he"]
 [ext_resource type="Texture2D" uid="uid://dmu1ihgjg6u8x" path="res://assets/Tilesets/Kings and Pigs/Sprites/14-TileSets/Terrain (32x32).png" id="3_rckmt"]
@@ -11,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://lhiwkujy3uf" path="res://Scenes/Players/Azul/player_azul.tscn" id="9_vabhi"]
 [ext_resource type="Texture2D" uid="uid://c70vljs03fhfi" path="res://assets/Tilesets/Decoracoes Vila/TX Chest Animation.png" id="10_j4wwt"]
 [ext_resource type="PackedScene" uid="uid://die0ercty8yag" path="res://Scenes/Porta/porta.tscn" id="11_lfawr"]
+[ext_resource type="PackedScene" uid="uid://bt3ax8ys3le63" path="res://Scenes/Fall zone/fall_rosa.tscn" id="12_pbldy"]
+[ext_resource type="PackedScene" uid="uid://cfrirvaumxvoe" path="res://Scenes/Fall zone/fall_azul.tscn" id="13_8xqch"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_piv6r"]
 texture = ExtResource("1_flqjd")
@@ -5995,6 +5998,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_4yk8b")
 
 [node name="TileMapLayerFUNDO" type="TileMapLayer" parent="."]
 position = Vector2(1, 23)
@@ -6022,4 +6026,20 @@ tile_map_data = PackedByteArray("AAAyAP//AQAKAA4AAAArABcABAAqAC4AAAAvABcABAAuAC4
 tile_set = SubResource("TileSet_rbp4a")
 
 [node name="Porta" parent="." instance=ExtResource("11_lfawr")]
-position = Vector2(44, 373)
+position = Vector2(42, 363)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Fall_rosa" parent="Node" instance=ExtResource("12_pbldy")]
+position = Vector2(593, 66)
+
+[node name="Fall_rosa2" parent="Node" instance=ExtResource("12_pbldy")]
+position = Vector2(297, 401)
+scale = Vector2(0.8, 1)
+
+[node name="Fall_rosa3" parent="Node" instance=ExtResource("12_pbldy")]
+position = Vector2(394, 275)
+scale = Vector2(4.3, 1)
+
+[node name="Fall_azul" parent="Node" instance=ExtResource("13_8xqch")]
+position = Vector2(625, 130)
