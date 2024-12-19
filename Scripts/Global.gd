@@ -13,7 +13,7 @@ var num_questoes
 var liberar_platR
 var liberar_platA
 var plataforma 
-var fase_pre = preload("res://Scenes/Fases/Fase1/Fase1.tscn")
+var fase_pre 
 var reinicia_fase
 var tipo_fase = ""
 var musica_fase = preload("res://sounds/musicaF1.mp3")

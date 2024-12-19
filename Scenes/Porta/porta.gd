@@ -20,13 +20,7 @@ func _process(delta: float) -> void:
 func _on_body_entered(body: Node2D) -> void:
 	if aberta == true and body.is_in_group('players'):
 		nbody += 1
-		if self.name == "PortaF10" :
-			if nbody >= 3 :
-				$"/root/TransitionScreen".transition()
-				await $"/root/TransitionScreen".on_transition_finished
-				get_tree().change_scene_to_packed($"/root/Global".fase_pre)
-		else :
-			if nbody >= 2 :
-				$"/root/TransitionScreen".transition()
-				await $"/root/TransitionScreen".on_transition_finished
-				get_tree().change_scene_to_packed($"/root/Global".fase_pre)
+		if nbody >= 2 :
+			$"/root/TransitionScreen".transition()
+			await $"/root/TransitionScreen".on_transition_finished
+			get_tree().change_scene_to_packed($"/root/Global".fase_pre)

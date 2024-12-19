@@ -13,7 +13,8 @@ func _ready() -> void:
 	$"/root/Global".liberar_platA = ""
 	$"/root/Global".liberar_platR = ""
 	$"/root/Global".tipo_fase = "tipo2"
-	$"/root/Global".reinicia_fase = preload("res://Scenes/Cutscenes/ultima_cut.tscn")
+	$"/root/Global".reinicia_fase = preload("res://Scenes/Fases/Fase10/Fase10.tscn")
+	$"/root/Global".fase_pre = preload("res://Scenes/Cutscenes/ultima_cut.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
