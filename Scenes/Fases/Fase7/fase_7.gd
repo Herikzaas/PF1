@@ -3,6 +3,8 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$"/root/Global".musica_fase = preload("res://sounds/musicaF2.mp3")
+	$"/root/AudioPlayer".play_music_level()
 	$"/root/Global".fase = 7
 	$"/root/Global".acertos = 0
 	$"/root/Global".num_questoes = 6

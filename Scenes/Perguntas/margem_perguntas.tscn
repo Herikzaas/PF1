@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/margem_perguntas.gd" id="1_u00ro"]
 
 [node name="MargemPerguntas" type="MarginContainer"]
+z_index = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

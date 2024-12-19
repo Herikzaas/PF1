@@ -16,7 +16,7 @@ var plataforma
 var fase_pre
 var reinicia_fase
 var tipo_fase = ""
-
+var musica_fase = preload("res://sounds/musicaF1.mp3")
 
 #func _process(delta: float) -> void:
 	#if fase == 1 :

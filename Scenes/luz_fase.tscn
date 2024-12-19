@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://buarpkqasg1iq"]
+
+[node name="LuzFase" type="DirectionalLight2D"]
+energy = 0.3
+blend_mode = 1
+range_z_max = 0
