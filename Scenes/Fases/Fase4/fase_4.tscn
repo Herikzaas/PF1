@@ -2967,7 +2967,7 @@ tile_set = SubResource("TileSet_7bgep")
 [node name="PlataformaRosa" parent="Borda&FundoAzul" instance=ExtResource("3_mm3au")]
 position = Vector2(368, 194)
 scale = Vector2(0.7, 1)
-distance = -190
+distance = -180
 
 [node name="ParedeAzulSobe" parent="Borda&FundoAzul" instance=ExtResource("10_qxyck")]
 position = Vector2(329, 278)
@@ -3006,7 +3006,7 @@ position = Vector2(533, 356)
 position = Vector2(234, 143)
 
 [node name="PlayerAzul" parent="." instance=ExtResource("8_ftwye")]
-position = Vector2(304, 367)
+position = Vector2(360, 365)
 
 [node name="PorcoNormalDireita" parent="." instance=ExtResource("15_ipxau")]
 position = Vector2(788, 204)
