@@ -3013,7 +3013,7 @@ texture = ExtResource("1_u50mn")
 [sub_resource type="TileSet" id="TileSet_kitd2"]
 sources/0 = SubResource("TileSetAtlasSource_abv0r")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qcxrl"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m2mja"]
 texture = ExtResource("2_0p2il")
 0:0/0 = 0
 1:0/0 = 0
@@ -3081,7 +3081,7 @@ texture = ExtResource("2_0p2il")
 7:7/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_qhycr"]
-sources/0 = SubResource("TileSetAtlasSource_qcxrl")
+sources/0 = SubResource("TileSetAtlasSource_m2mja")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2vwe4"]
 texture = ExtResource("3_sxrsm")
