@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ProjetoFinal"
-run/main_scene="res://Scenes/Fases/Fase1/Fase1.tscn"
+run/main_scene="res://Scenes/Cutscenes/tela_principal.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(0.145098, 0.141176, 0.133333, 1)
 config/icon="res://icon.svg"
@@ -21,6 +21,7 @@ config/icon="res://icon.svg"
 Global="*res://Scripts/Global.gd"
 StaticData="*res://Singletons for bd/StaticData.gd"
 TransitionScreen="*res://Scenes/TransitionScreen/canvas_layer.tscn"
+AudioPlayer="*res://Scenes/Audio player/audio_player.tscn"
 
 [display]
 

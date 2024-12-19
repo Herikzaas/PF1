@@ -13,6 +13,7 @@ func _process(delta: float) -> void:
 	
 
 func liberar(delta) -> void :
+	velocidade = 15
 	if $"/root/Global".liberar_paredeA == "ParedeAzulF1" :
 		if self.name == "ParedeAzul" :
 			if $"/root/Global".certa == true :

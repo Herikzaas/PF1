@@ -57,6 +57,7 @@ func animation(direction):
 		anim.play('dead')
 func _on_anim_rosa_animation_finished() -> void:
 	if anim.animation == 'dead' :
+		
 		$"/root/TransitionScreen".transition()
 		await $"/root/TransitionScreen".on_transition_finished
 		get_tree().change_scene_to_packed($"/root/Global".reinicia_fase)

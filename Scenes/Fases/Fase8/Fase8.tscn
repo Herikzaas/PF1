@@ -6028,10 +6028,10 @@ position = Vector2(-23, -40)
 tile_set = SubResource("TileSet_qhycr")
 
 [node name="PlayerRosa" parent="." groups=["Rosa"] instance=ExtResource("8_8crcu")]
-position = Vector2(705, 103)
+position = Vector2(705, 102)
 
 [node name="PlayerAzul" parent="." instance=ExtResource("9_vabhi")]
-position = Vector2(656, 39)
+position = Vector2(102, 61)
 
 [node name="TileMapLayerCHAO" type="TileMapLayer" parent="."]
 position = Vector2(1, 24)
@@ -6082,7 +6082,7 @@ position = Vector2(263, 162)
 [node name="cristal_azulPlataforma" parent="Cristais" instance=ExtResource("16_vof4y")]
 position = Vector2(42, 59)
 
-[node name="cristal_azulTranca2" parent="Cristais" instance=ExtResource("16_vof4y")]
+[node name="cristal_azulTranca" parent="Cristais" instance=ExtResource("16_vof4y")]
 position = Vector2(111, 140)
 
 [node name="cristal_azul3" parent="Cristais" instance=ExtResource("16_vof4y")]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://bvuok7t71qfto"]
+[gd_scene load_steps=34 format=4 uid="uid://c828qg5qr3vxr"]
 
 [ext_resource type="Script" path="res://Scenes/Fases/Fase9/fase_9.gd" id="1_6lmg6"]
 [ext_resource type="Texture2D" uid="uid://lhy70dgss568" path="res://assets/Tilesets/Dungeon Tile Set/Dungeon Tile Set.png" id="1_t8eup"]
