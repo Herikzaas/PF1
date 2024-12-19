@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ukdjl64p4l51"]
+
+[ext_resource type="Script" path="res://Scenes/Cutscenes/cena_espinhos.gd" id="1_6b5xg"]
+[ext_resource type="Texture2D" uid="uid://r4kcrlgsoar6" path="res://assets/Cutscenes/cena_espinhos.png" id="1_37myo"]
+
+[node name="CenaEspinhos" type="Node2D"]
+script = ExtResource("1_6b5xg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(416, 217)
+texture = ExtResource("1_37myo")

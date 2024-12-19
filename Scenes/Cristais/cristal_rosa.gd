@@ -29,5 +29,7 @@ func fases() -> void :
 			$"/root/Global".liberar_paredeR = "ParedeRosaF3"
 		if self.name == "cristal_rosaPlataforma2" :
 			$"/root/Global".liberar_platR = "PlataformaRosaF7"
+		if self.name == "cristal_rosaParede2" : 
+			$"/root/Global".liberar_paredeR = "ParedeRosaF10"
 
 			

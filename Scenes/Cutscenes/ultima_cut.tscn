@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://6x0kqo7sdr1l"]
+
+[ext_resource type="Script" path="res://Scenes/Cutscenes/ultima_cut.gd" id="1_dgq3e"]
+[ext_resource type="Texture2D" uid="uid://npndu6vu6tr2" path="res://assets/Cutscenes/tela final parabens.png" id="2_2sui4"]
+
+[node name="UltimaCut" type="Node2D"]
+script = ExtResource("1_dgq3e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(415, 220)
+texture = ExtResource("2_2sui4")

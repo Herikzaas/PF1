@@ -20,17 +20,20 @@ func liberar(delta) -> void :
 				move_local_y(delta*15)
 				await get_tree().create_timer(12).timeout
 				self.visible = false
+				queue_free()
 		if self.name == "ParedeAzulSobe":
 			if $"/root/Global".certa == true :
 				move_local_y(delta*-15)
 				await get_tree().create_timer(12).timeout
 				self.visible = false
+				queue_free()
 	if $"/root/Global".liberar_paredeR == "ParedeRosaF1" :
 		if self.name == "ParedeRosa" :
 			if $"/root/Global".certa == true :
 				move_local_y(delta*15)
 				await get_tree().create_timer(12).timeout
 				self.visible = false
+				queue_free()
 	if $"/root/Global".liberar_paredeR == "ParedeRosaF3" :
 		if self.name == "ParedeInimigoR" or self.name == "ParedeInimigoR2":
 			if $"/root/Global".certa == true :
@@ -38,8 +41,17 @@ func liberar(delta) -> void :
 					move_local_y(delta * -velocidade)
 				else :
 					velocidade = 0
-	if $"/root/Global".liberar_paredeA == "ParedeAzulT1" :
-		if self.name == "Parede_AzulTranca" :
+	if $"/root/Global".liberar_paredeA == "ParedeAzulF10" :
+		if self.name == "ParedeAzul2" :
 			if $"/root/Global".certa == true :
-				if self.position.y <= 122 :
-					move_local_y(delta * -velocidade)
+				move_local_y(delta*15)
+				await get_tree().create_timer(12).timeout
+				self.visible = false
+				queue_free()
+	if $"/root/Global".liberar_paredeR == "ParedeRosaF10" :
+		if self.name == "ParedeRosa2" :
+			if $"/root/Global".certa == true :
+				move_local_y(delta*15)
+				await get_tree().create_timer(12).timeout
+				self.visible = false
+				queue_free()

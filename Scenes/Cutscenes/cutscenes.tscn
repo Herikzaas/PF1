@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpcguh8rvfmew"]
+
+[ext_resource type="Script" path="res://Scenes/Cutscenes/cutscenes.gd" id="1_haa1e"]
+[ext_resource type="Texture2D" uid="uid://dxd5kgq5kwruy" path="res://assets/Cutscenes/1_cena_parte1.png" id="1_whigx"]
+
+[node name="Cutscenes" type="Node2D"]
+script = ExtResource("1_haa1e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(420, 224)
+texture = ExtResource("1_whigx")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(420, 224)

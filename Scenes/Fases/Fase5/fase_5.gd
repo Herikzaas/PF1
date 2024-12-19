@@ -11,7 +11,7 @@ func _ready() -> void:
 	$"/root/Global".liberar_paredeA = ""
 	$"/root/Global".liberar_platA = ""
 	$"/root/Global".liberar_platR = ""
-	$"/root/Global".fase_pre = preload("res://Scenes/Fases/Fase6/fase_6.tscn")
+	$"/root/Global".fase_pre = preload("res://Scenes/Cutscenes/cena_espinhos.tscn")
 	$"/root/Global".tipo_fase = "tipo1"
 
 
