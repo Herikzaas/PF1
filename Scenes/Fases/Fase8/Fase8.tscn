@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://d3gjc1yy88as5"]
+[gd_scene load_steps=43 format=4 uid="uid://d3gjc1yy88as5"]
 
 [ext_resource type="Script" path="res://Scenes/Fases/Fase8/fase_8.gd" id="1_4yk8b"]
 [ext_resource type="Texture2D" uid="uid://lhy70dgss568" path="res://assets/Tilesets/Dungeon Tile Set/Dungeon Tile Set.png" id="1_flqjd"]
@@ -19,6 +19,8 @@
 [ext_resource type="PackedScene" uid="uid://bg11bx2yqbk1m" path="res://Scenes/Cristais/cristal_azul.tscn" id="16_vof4y"]
 [ext_resource type="PackedScene" uid="uid://ct1xsk746e3gg" path="res://Scenes/Cristais/cristal_rosa.tscn" id="17_7oi0l"]
 [ext_resource type="PackedScene" uid="uid://d2upbds3urobb" path="res://Scenes/PlataformaSobe/plat_rosa.tscn" id="19_t6c2w"]
+[ext_resource type="PackedScene" uid="uid://buarpkqasg1iq" path="res://Scenes/luz_fase.tscn" id="20_r3o2f"]
+[ext_resource type="PackedScene" uid="uid://csubop64hh3aq" path="res://Scenes/ponto_luz.tscn" id="21_by8ew"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_piv6r"]
 texture = ExtResource("1_flqjd")
@@ -6039,7 +6041,7 @@ tile_map_data = PackedByteArray("AAAyAP//AQAKAA4AAAArABcABAAqAC4AAAAvABcABAAuAC4
 tile_set = SubResource("TileSet_rbp4a")
 
 [node name="Porta" parent="." instance=ExtResource("11_lfawr")]
-position = Vector2(42, 363)
+position = Vector2(48, 363)
 
 [node name="Node" type="Node" parent="."]
 
@@ -6108,3 +6110,8 @@ scale = Vector2(0.5, 1)
 move_speed = 5.0
 distance = 400
 move_horizontal = true
+
+[node name="LuzFase" parent="." instance=ExtResource("20_r3o2f")]
+
+[node name="ponto_luz" parent="." instance=ExtResource("21_by8ew")]
+position = Vector2(88, 351)

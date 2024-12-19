@@ -1,6 +1,6 @@
 extends AudioStreamPlayer2D
 
-const level_music = preload("res://sounds/musicaF1.mp3")
+#var level_music = $"/root/Global".musica_fase
 
 func _play_music(music : AudioStream, volume = -16.8) :
 	if stream == music :
@@ -8,7 +8,10 @@ func _play_music(music : AudioStream, volume = -16.8) :
 	
 	stream = music
 	volume_db = volume
+	stream.loop = true
 	play()
 
 func play_music_level():
-	_play_music(level_music)
+	var musica = $"/root/Global".musica_fase
+	_play_music(musica)
+	
