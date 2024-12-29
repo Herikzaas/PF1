@@ -4,6 +4,8 @@ var fase = preload("res://Scenes/Fases/Fase1/Fase1.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$"/root/Global".musica_fase = preload("res://sounds/musica_titulo.mp3")
+	$"/root/AudioPlayer".play_music_level()
 	$"/root/Global".fase_pre = preload("res://Scenes/Fases/Fase1/Fase1.tscn")
 	
 	$Sprite2D.texture = preload("res://assets/Cutscenes/1_cena_parte1.png")

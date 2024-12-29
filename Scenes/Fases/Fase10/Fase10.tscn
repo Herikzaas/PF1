@@ -4112,10 +4112,10 @@ tile_set = SubResource("TileSet_w3mrb")
 position = Vector2(348, 133)
 
 [node name="PlayerAzul" parent="." instance=ExtResource("9_rbhp4")]
-position = Vector2(442, 128)
+position = Vector2(346, 399)
 
 [node name="PlayerRosa" parent="." groups=["Rosa"] instance=ExtResource("10_4yqdt")]
-position = Vector2(477, 131)
+position = Vector2(479, 400)
 
 [node name="TileMapLayerPERGUNTAS" type="TileMapLayer" parent="."]
 position = Vector2(-23, -40)

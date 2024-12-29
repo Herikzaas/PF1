@@ -6,7 +6,7 @@ func _ready() -> void:
 	$"/root/Global".musica_fase = preload("res://sounds/musicaF2.mp3")
 	$"/root/AudioPlayer".play_music_level()
 	$"/root/Global".fase = 10
-	$"/root/Global".acertos = 12
+	$"/root/Global".acertos = 0
 	$"/root/Global".num_questoes = 12
 	$"/root/Global".liberar_paredeR = ""
 	$"/root/Global".liberar_paredeA = ""
